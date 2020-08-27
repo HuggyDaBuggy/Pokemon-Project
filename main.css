@@ -8,14 +8,43 @@ body {
  justify-content: space-around;
  list-style-type: none;
  padding: 0;
- margin: 0;
+ margin-top: auto;
+
+ text-align: center;
+ margin-left: auto;
+ border-left: 3px solid black;
+ border-right: 3px solid black;
+ border-top: 3px solid black;
  border-bottom: 3px solid black;
 }
 
+.logo {
+ float: left;
+}
+
 .menu-item {
- opacity: 1;
+ margin-top: auto;
+ margin-bottom: auto;
+ text-align: center;
 }
 
 .menu-item:hover {
+ margin-top: auto;
+ margin-bottom: auto;
+}
+
+a:link {
+ color: black;
+ background-color: transparent;
+ text-decoration: none;
+}
+
+a:visited {
+ color: black;
+}
+
+a:hover {
  opacity: 0.5;
+ color: blue;
+ text-decoration: none;
 }
