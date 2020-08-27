@@ -1,0 +1,21 @@
+body {
+ background-color: white; 
+}
+
+.nav-menu {
+ background-color: white;
+ display: flex;
+ justify-content: space-around;
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+ border-bottom: 3px solid black;
+}
+
+.menu-item {
+ opacity: 1;
+}
+
+.menu-item:hover {
+ opacity: 0.5;
+}
