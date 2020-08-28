@@ -50,6 +50,7 @@ footer {
  display: flex;
  justify-content: space-around;
  list-style-type: none;
+ font-size: 10px;
 }
 
 a:link {
