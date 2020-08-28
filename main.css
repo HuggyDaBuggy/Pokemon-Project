@@ -47,6 +47,9 @@ footer {
  padding-left: 20px;
  padding-right: 20px;
  background-color: #f2f6fc;
+ display: flex;
+ justify-content: space-around;
+ list-style-type: none;
 }
 
 a:link {
