@@ -95,3 +95,10 @@ a:hover {
 .creators {
  align-items: center;
 }
+
+.references {
+ border-radius: 10px;
+ border: 1px solid black;
+ background-color: #f2f6fc;
+ padding: 20px;
+}
