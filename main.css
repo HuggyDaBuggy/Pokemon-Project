@@ -1,0 +1,94 @@
+body {
+<<<<<<< HEAD
+    background-color:white;
+}
+
+/* button */
+.callToAction {
+}
+
+.menu-item {
+
+}
+
+.menu-item:hover {
+}
+
+#heroimage {
+
+}
+/*default background */
+.load {
+
+}
+
+.nav-menu {
+
+}
+=======
+ background-color:white;
+}
+
+header {
+ background-color: white;
+ display: flex;
+ justify-content: space-around;
+ list-style-type: none;
+ float: left;
+ width: 100%;
+ border-bottom: 1px solid black;
+ border-bottom-left-radius: 5px;
+ border-bottom-right-radius: 5px;
+ border-top: 1px solid black;
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+ border-left: 1px solid black;
+ border-right: 1px solid black;
+}
+
+p {
+ font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+ font-family: 'Courier New', Courier, monospace;
+ text-align: center;
+}
+
+a:link {
+ color: #222;
+ background-color: transparent;
+ text-decoration: none;
+}
+
+a:visited {
+ color: #222;
+}
+
+a:hover {
+ color: blue;
+}
+
+.dropdown {
+ position: relative;
+ display: inline-block;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: white;
+ min-width: 100px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ padding-left: 5px;
+ z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+
+th {
+ text-align: center;
+}
+>>>>>>> 10816145b1360f6087133bd422ff0142118b6c60
