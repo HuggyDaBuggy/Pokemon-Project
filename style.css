@@ -18,12 +18,11 @@ header {
  background-color: #f2f6fc;
 }
 
-p {
- font-family: Arial, Helvetica, sans-serif;
+body {
+font-family: 'Gayathri', sans-serif;
 }
 
 h1 {
- font-family: Arial, Helvetica, sans-serif;
  text-align: center;
 }
 
@@ -116,6 +115,6 @@ a:hover {
 }
 
 .pokemon-table {
-    text-align: left;
-    padding: 20px;
+ text-align: left;
+ padding: 20px;
 }
