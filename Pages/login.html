@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel=stylesheet href=../../style.css>
+    <link rel=stylesheet href=../style.css>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/gif/png" href="../../Images/icon.png">
+    <link rel="icon" type="image/gif/png" href="../Images/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <title>Pokemon - Home</title>
+    <title>Pokemon - Admin Login</title>
 </head>
 
 <body>
     <header> 
-    <li><img src="../../Images/pokemon.png" height="47"></a> </li>
-    <li title="Home page"><a href="../../home.html"><p>Home</p></a></li>
+    <li><img src="../Images/pokemon.png" height="47"></a></li>
+    <li title="Home page"><a href="../home.html"><p>Home</p></a></li>
         <div class="dropdown">
-            <li title="The cutest pokemon"><a href="../cute.html"><p>Cute</p></a></li>
+            <li title="The cutest pokemon"><a href="cute.html"><p>Cute</p></a></li>
             <div class="dropdown-content">
                 <a href="#" title="Pikachu"><p>Pikachu</p></a>
                 <a href="#" title="Eevee"><p>Eevee</p></a>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="dropdown">
-            <li title="The ugliest pokemon"><a href="../ugly.html"><p>Ugly</p></a></li>
+            <li title="The ugliest pokemon"><a href="ugly.html"><p>Ugly</p></a></li>
             <div class="dropdown-content">
                 <a href="#" title="Jynx"><p>Jynx</p></a>
                 <a href="#" title="Probopass"><p>Probopass</p></a>
@@ -54,40 +54,34 @@
             </div>
         </div>
         <div class="dropdown">
-            <li title="Vote on polls"><a href="../polls.html"><p>Polls</p></a></li>
+            <li title="Vote on polls"><a href="polls.html"><p>Polls</p></a></li>
             <div class="dropdown-content">
                 <a href="#"><p>Poll</p></a>
             </div>
         </div>
     </header>
-    <h1>Pikachu</h1>
-    <table>
-        <tr valign="top">
-            <td class="pokemon-table"><p>ok</p></td>
-            <td width="30%"><img src="../../Images/Pokemon/Pikachu.png" alt="Pikachu"></td>
-        </tr>
-    </table>
-    <h3>Related Pokemon</h3>
-    <table>
-        <tr>
-            <th>
-                <img src="../../Images/Pokemon/#.png" alt="#" width="128" height="128"><br><p>#</p>
-            </th>
-            <th>
-                <img src="../../Images/Pokemon/#.png" alt="#" width="128" height="128"><br><p>#</p>
-            </th>
-            <th>
-                <img src="../../Images/Pokemon/#.png" alt="#" width="128" height="128"><br><p>#</p>
-            </th>
-            <th>
-                <img src="../../Images/Pokemon/#.png" alt="#" width="128" height="128"><br><p>#</p>
-            </th>
-        </tr>
-    </table>
+    <h1>Admin Login</h1>
+    <div class="form">
+        <form action="../index.php">
+            <p class="form-item">
+                <label><b>Username:</b></label>
+                <br>
+                <input type="text" placeholder="Enter Username" name="username" required>
+            </p>
+            <p class="form-item">
+                <label><b>Password:</b></label>
+                <br>
+                <input type="password" placeholder="Enter Password" name="password" required>
+            </p>
+            <div class="center">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
     <footer>
-        <a href="../login.html"><p>Admin Login</p></a>
-        <a href="../creators.html"><p>Creators</p></a>
-        <a href="../references.html"><p>References</p></a>
+        <p><b>Admin Login</b></p>
+        <a href="creators.html"><p>Creators</p></a>
+        <a href="references.html"><p>References</p></a>
         <a href="https://www.pokemon.com/us/" target="_blank"><p>Official Pokemon Website</p></a>
         <a href="https://www.pokemon.com/us/pokedex/" target="_blank"><p>Official Poxedex</p></a>
     </footer>
