@@ -12,7 +12,6 @@ function login() {
 	}
 	else  if (password == ""){
 		alert("Please input a Password")
-	
 	}
 	else {
 		alert("Incorrect Username/Password")
