@@ -41,11 +41,11 @@ a:visited {
 a:hover {
     color: blue;
 }
+/*Dropdown Content*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
-/*Dropdown Content*/
 .dropdown-content {
     display: none;
     position: absolute;

@@ -17,3 +17,7 @@ function login() {
 		alert("Incorrect Username/Password")
 	}
 }
+
+function load() {
+
+}
