@@ -1,11 +1,13 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 body {
   background-color: white;
-  text-align: center;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
+
 /*Header Formatting*/
 header {
   background-color: white;
@@ -18,6 +20,7 @@ header {
   margin-bottom: 20px;
   background-color: #f2f6fc;
 }
+
 /*Footer Formatting*/
 footer {
   text-align: center;
@@ -29,21 +32,84 @@ footer {
   list-style-type: none;
   font-size: 60%;
 }
+
 /*Link Formatting*/
 a:link {
   color: #000000;
   text-decoration: none;
 }
+
 a:visited {
   color: #000000;
 }
+
 a:hover {
   color: blue;
 }
-.dropdown {
-  position: relative;
+
+/*Cute and Ugly Table*/
+.cute-ugly-main {
+  margin-bottom: 2%;
+  margin-top: 3%;
+  padding: 2%;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #f2f6fc;
+}
+
+.cute-ugly-item {
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  text-align: center;
+  width: 28%;
+  height: 28%;
+  margin: 1%;
+  padding: 1%;
   display: inline-block;
 }
+
+/*Login Page Formatting*/
+input[type="text"],
+input[type="password"] {
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #f2f6fc;
+  padding: 5%;
+  text-align: left;
+  margin: 3%;
+  width: 80%;
+}
+
+button {
+  padding: 5%;
+  text-align: center;
+  margin: 2%;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.form {
+  border-radius: 10px;
+  padding: 1%;
+  margin-bottom: 2%;
+  border: 1px solid black;
+  background-color: #f2f6fc;
+  width: 20%;
+  display: inline-block;
+}
+
+.form-item {
+  padding: 1%;
+  margin: 2%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+}
+
 /*Dropdown Content*/
 .dropdown-content {
   display: none;
@@ -60,6 +126,36 @@ a:hover {
   background-color: #f2f6fc;
   text-align: left;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/*Creator Page Formatting*/
+.creators {
+  margin-bottom: 2%;
+  margin-top: 3%;
+  padding: 2%;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #f2f6fc;
+}
+
+.creators-item {
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  margin: 1%;
+  width: 28%;
+  padding: 1%;
+  display: inline-block;
+}
+
+/*References Page Formatting*/
+.references {
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #f2f6fc;
+  padding: 20px;
+  text-align: left;
 }
