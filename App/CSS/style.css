@@ -6,6 +6,23 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
+.box-main {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 5px;
+  margin: 10px;
+  align-content: center;
+  text-align: center;
+  width: 220px;
+}
+.box-sub {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 5px;
+  margin: 10px;
+  align-content: center;
+  text-align: center;
+}
 /*Header Formatting*/
 header {
   background-color: white;
