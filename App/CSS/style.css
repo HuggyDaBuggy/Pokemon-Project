@@ -87,21 +87,3 @@ a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/*Creator Page Formatting*/
-.creators {
-  margin-bottom: 2%;
-  margin-top: 3%;
-  padding: 2%;
-  border-radius: 10px;
-  border: 1px solid black;
-  background-color: #f2f6fc;
-}
-.creators-item {
-  border-radius: 10px;
-  border: 1px solid black;
-  background-color: rgb(255, 255, 255);
-  margin: 1%;
-  width: 28%;
-  padding: 1%;
-  display: inline-block;
-}
