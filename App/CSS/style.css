@@ -29,7 +29,8 @@ body {
   display: inline-block;
 }
 /*Link Formatting*/
-a:link, a:visited {
+a:link,
+a:visited {
   color: #000000;
   text-decoration: none;
 }
