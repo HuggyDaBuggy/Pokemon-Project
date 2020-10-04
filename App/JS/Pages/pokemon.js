@@ -107,7 +107,7 @@ if (type == "") {
 } else {
   document.title = "Pokemon - " + pokemon;
   document.getElementById("pokemon-name").innerHTML = pokemon;
-  document.getElementById(pokemon + "-link").setAttribute("href", "");
+  document.getElementById(pokemon + "-link").setAttribute("href", "javascript: void(0)");
   document.getElementById(pokemon + "-link").style.cursor = "default";
   document.getElementById(pokemon + "-link").style.fontWeight = "bold";
   document.getElementById(pokemon + "-link").style.color = "#000000";
