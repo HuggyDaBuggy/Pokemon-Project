@@ -46,7 +46,7 @@ while (a < 15) {
     document.getElementById("pokemon-image").setAttribute("alt", pokemon);
     while (b < 4) {
       if (b < 2) {
-        var bb = a - 2 + c;
+        var bb = a - 2 + b;
         if (bb == -1) {
           bb = 14;
         }
@@ -54,7 +54,7 @@ while (a < 15) {
           bb = 13;
         }
       } else {
-        var bb = a - 1 + c;
+        var bb = a - 1 + b;
         if (bb == 15) {
           bb = 0;
         }
