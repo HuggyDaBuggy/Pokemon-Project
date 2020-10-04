@@ -1,3 +1,35 @@
+var pokemons = [
+  "Pikachu",
+  "Eevee",
+  "Mew",
+  "Togepi",
+  "Skitty",
+  "Vulpix",
+  "Emolga",
+  "Deerling",
+  "Snom",
+  "Teddiursa",
+  "Jirachi",
+  "Jigglypuff",
+  "Shaymin",
+  "Meloetta",
+  "Absol",
+  "Jynx",
+  "Probopass",
+  "Garbodor",
+  "Conkelgurr",
+  "Barbaracla",
+  "Stunfisk",
+  "Seismitoad",
+  "Purugly",
+  "Muk",
+  "Drowzee",
+  "Swampert",
+  "Walrein",
+  "Malmar",
+  "Malmar",
+  "Malmar",
+];
 var cutepokemon = [
   ["Pikachu", "025", "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt", ""],
   ["Eevee", "133", "The evolution pokémon. Eevee is most well known for the largest amount of possible evolutions- 8 in total.", ""],
@@ -10,7 +42,7 @@ var cutepokemon = [
   ["Snom", "872", "", ""],
   ["Teddiursa", "216", "", ""],
   ["Jirachi", "385", "", ""],
-  ["jigglypuff", "039", "", ""],
+  ["Jigglypuff", "039", "", ""],
   ["Shaymin", "492", "", ""],
   ["Meloetta", "648", "", ""],
   ["Absol", "359", "", ""],
@@ -29,17 +61,29 @@ var uglypokemon = [
   ["Swampert", "260", "", ""],
   ["Walrein", "365", "", ""],
   ["Malmar", "687", "", ""],
-  ["Noivern", "715", "", ""],
-  ["Skuntank", "435", "", ""],
+  ["Malmar", "715", "", ""],
+  ["Malmar", "435", "", ""],
 ];
 var pokemon = window.location.href.split("?")[1];
 var a = 0;
 var b = 0;
 var c = 0;
 var type = "";
+if (pokemons.includes(pokemon)) {
+  document.title = "Pokemon - " + pokemon;
+  document.getElementById("pokemon-name").innerHTML = pokemon;
+  document.getElementById("pokemon-stats-title").innerHTML = pokemon + " Info";
+  document.getElementById("pokemon-info-title").innerHTML = pokemon + " Stats";
+  document.getElementById(pokemon + "-link").setAttribute("href", "javascript: void(0)");
+  document.getElementById(pokemon + "-link").style.cursor = "default";
+  document.getElementById(pokemon + "-link").style.fontWeight = "bold";
+  document.getElementById(pokemon + "-link").style.color = "#000000";
+} else {
+  window.history.back();
+  window.location.replace("https://huggydabuggy.github.io/Pokemon-Project/");
+}
 while (a < 15) {
   if (cutepokemon[a][0] == pokemon) {
-    var type = "Cute";
     document.getElementById("related-pokemon").innerHTML = "Other Cute Pokemon";
     document.getElementById("pokemon-info").innerHTML = cutepokemon[a][2];
     document.getElementById("pokemon-stats").innerHTML = cutepokemon[a][3];
@@ -71,9 +115,8 @@ while (a < 15) {
     }
   }
   if (uglypokemon[a][0] == pokemon) {
-    var type = "Ugly";
     document.getElementById("related-pokemon").innerHTML = "Other Ugly Pokemon";
-    document.getElementById("pokemon-info").innerHTML = uglypokemon[a][2];    
+    document.getElementById("pokemon-info").innerHTML = uglypokemon[a][2];
     document.getElementById("pokemon-stats").innerHTML = uglypokemon[a][3];
     document.getElementById("pokemon-image").setAttribute("src", "App/Images/Pokemon/Ugly/" + uglypokemon[a][1] + ".png");
     document.getElementById("pokemon-image").setAttribute("alt", pokemon);
@@ -103,16 +146,4 @@ while (a < 15) {
     }
   }
   a++;
-}
-if (type == "") {
-  window.location.replace("https://huggydabuggy.github.io/Pokemon-Project/");
-} else {
-  document.title = "Pokemon - " + pokemon;
-  document.getElementById("pokemon-name").innerHTML = pokemon;
-  document.getElementById("pokemon-stats-title").innerHTML = pokemon + " Info";
-  document.getElementById("pokemon-info-title").innerHTML = pokemon + " Stats";
-  document.getElementById(pokemon + "-link").setAttribute("href", "javascript: void(0)");
-  document.getElementById(pokemon + "-link").style.cursor = "default";
-  document.getElementById(pokemon + "-link").style.fontWeight = "bold";
-  document.getElementById(pokemon + "-link").style.color = "#000000";
 }
