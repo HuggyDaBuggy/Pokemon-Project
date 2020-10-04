@@ -1,3 +1,4 @@
+var pokemons = {Pikachu: {type: "Cute", id: "025", number: "1"}, Eevee: {}};
 var url = window.location.href;
 var urlsplit = url.split("?");
 var pokemon = urlsplit[1];
@@ -7,6 +8,8 @@ if (pokemon == null) {
 document.title = "Pokemon - " + pokemon;
 document.getElementById("pokemon-name").innerHTML = pokemon;
 document.getElementById("pokemon-info").innerHTML = pokemon;
+document.getElementById("pokemon-image").setAttribute("src", "App/Images/Pokemon/" + pokemons[pokemon]["type"] + "/" + pokemons[pokemon]["id"] + ".png");
+document.getElementById("pokemon-image").setAttribute("alt", pokemon);
 document.getElementById("related-pokemon-image-1").setAttribute("src", "");
 document.getElementById("related-pokemon-image-1").setAttribute("alt", "");
 document.getElementById("related-pokemon-1").innerHTML = "";
