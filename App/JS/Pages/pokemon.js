@@ -55,8 +55,8 @@ while (a < 15) {
   if (uglypokemon[a][0] == pokemon) {
     var type = "Ugly";
     document.getElementById("related-pokemon").innerHTML = "Other Ugly Pokemon";
-    document.getElementById("pokemon-info").innerHTML = uglypokemon[i][3];
-    document.getElementById("pokemon-image").setAttribute("src", "App/Images/Pokemon/Ugly/" + uglypokemon[i][1] + ".png");
+    document.getElementById("pokemon-info").innerHTML = uglypokemon[a][3];
+    document.getElementById("pokemon-image").setAttribute("src", "App/Images/Pokemon/Ugly/" + uglypokemon[a][1] + ".png");
     document.getElementById("pokemon-image").setAttribute("alt", pokemon);
     while (c < 5) {
       document.getElementById("related-pokemon-image-" + c).setAttribute("src", "App/Images/Pokemon/Cute/" + cutepokemon[c][1] + ".png");
