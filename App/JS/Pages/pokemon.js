@@ -45,7 +45,7 @@ while (a < 15) {
     document.getElementById("pokemon-image").setAttribute("src", "App/Images/Pokemon/Cute/" + cutepokemon[a][1] + ".png");
     document.getElementById("pokemon-image").setAttribute("alt", pokemon);
     while (b < 4) {
-      if (c < 2) {
+      if (b < 2) {
         var bb = a - 2 + c;
         if (bb == -1) {
           bb = 14;
