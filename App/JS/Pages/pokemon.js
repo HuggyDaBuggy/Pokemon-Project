@@ -1,5 +1,5 @@
 var cutepokemon = [
-  ["Pikachu", "025", ""],
+  ["Pikachu", "025", "Something something something about pichaku"],
   ["Eevee", "133", ""],
   ["Mew", "151", ""],
   ["Togepi", "175", ""],
