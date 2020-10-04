@@ -4,6 +4,7 @@ var pokemon = urlsplit[1];
 if (pokemon == null) {
   window.location.replace("index");
 }
+document.getElementById("pokemon-title").innerHTML = "Pokemon - " + pokemon;
 document.getElementById("pokemon-name").innerHTML = pokemon;
 document.getElementById("pokemon-info").innerHTML = pokemon;
 document.getElementById("related-pokemon-image-1").setAttribute("src", "");
