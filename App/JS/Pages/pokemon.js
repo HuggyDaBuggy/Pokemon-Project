@@ -103,7 +103,7 @@ while (a < 15) {
   a++;
 }
 if (type == "") {
-  window.location.replace("index");
+  window.location.replace("https://huggydabuggy.github.io/Pokemon-Project/");
 } else {
   document.title = "Pokemon - " + pokemon;
   document.getElementById("pokemon-name").innerHTML = pokemon;
