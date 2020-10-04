@@ -33,50 +33,40 @@ var uglypokemon = [
   ["Skuntank", "435", ""],
 ];
 var pokemon = window.location.href.split("?")[1];
-var i = 0;
+var a = 0;
+var b = 1;
+var c = 1;
 var type = "";
-while (i < 15) {
-  if (cutepokemon[i][0] == pokemon) {
+while (a < 15) {
+  if (cutepokemon[a][0] == pokemon) {
     var type = "Cute";
     document.getElementById("related-pokemon").innerHTML = "Other Cute Pokemon";
-    document.getElementById("pokemon-info").innerHTML = cutepokemon[i][3];
-    document.getElementById("pokemon-image").setAttribute("src", "App/Images/Pokemon/Cute/" + cutepokemon[i][1] + ".png");
+    document.getElementById("pokemon-info").innerHTML = cutepokemon[a][2];
+    document.getElementById("pokemon-image").setAttribute("src", "App/Images/Pokemon/Cute/" + cutepokemon[a][1] + ".png");
     document.getElementById("pokemon-image").setAttribute("alt", pokemon);
-    document.getElementById("related-pokemon-image-1").setAttribute("src", "");
-    document.getElementById("related-pokemon-image-1").setAttribute("alt", "");
-    document.getElementById("related-pokemon-1").innerHTML = "";
-    document.getElementById("related-pokemon-image-2").setAttribute("src", "");
-    document.getElementById("related-pokemon-image-2").setAttribute("alt", "");
-    document.getElementById("related-pokemon-2").innerHTML = "";
-    document.getElementById("related-pokemon-image-3").setAttribute("src", "");
-    document.getElementById("related-pokemon-image-3").setAttribute("alt", "");
-    document.getElementById("related-pokemon-3").innerHTML = "";
-    document.getElementById("related-pokemon-image-4").setAttribute("src", "");
-    document.getElementById("related-pokemon-image-4").setAttribute("alt", "");
-    document.getElementById("related-pokemon-4").innerHTML = "";
-    break;
+    while (b < 5) {
+      document.getElementById("related-pokemon-image-" + b).setAttribute("src", "App/Images/Pokemon/Cute/" + cutepokemon[b][1] + ".png");
+      document.getElementById("related-pokemon-image-" + b).setAttribute("alt", cutepokemon[b][0]);
+      document.getElementById("related-pokemon-link-" + b).setAttribute("href", "pokemon?" + cutepokemon[b][0]);
+      document.getElementById("related-pokemon-" + b).innerHTML = cutepokemon[b][0];
+      b++;
+    }
   }
-  if (uglypokemon[i][0] == pokemon) {
+  if (uglypokemon[a][0] == pokemon) {
     var type = "Ugly";
     document.getElementById("related-pokemon").innerHTML = "Other Ugly Pokemon";
     document.getElementById("pokemon-info").innerHTML = uglypokemon[i][3];
     document.getElementById("pokemon-image").setAttribute("src", "App/Images/Pokemon/Ugly/" + uglypokemon[i][1] + ".png");
     document.getElementById("pokemon-image").setAttribute("alt", pokemon);
-    document.getElementById("related-pokemon-image-1").setAttribute("src", "");
-    document.getElementById("related-pokemon-image-1").setAttribute("alt", "");
-    document.getElementById("related-pokemon-1").innerHTML = "";
-    document.getElementById("related-pokemon-image-2").setAttribute("src", "");
-    document.getElementById("related-pokemon-image-2").setAttribute("alt", "");
-    document.getElementById("related-pokemon-2").innerHTML = "";
-    document.getElementById("related-pokemon-image-3").setAttribute("src", "");
-    document.getElementById("related-pokemon-image-3").setAttribute("alt", "");
-    document.getElementById("related-pokemon-3").innerHTML = "";
-    document.getElementById("related-pokemon-image-4").setAttribute("src", "");
-    document.getElementById("related-pokemon-image-4").setAttribute("alt", "");
-    document.getElementById("related-pokemon-4").innerHTML = "";
-    break;
+    while (c < 5) {
+      document.getElementById("related-pokemon-image-" + c).setAttribute("src", "App/Images/Pokemon/Cute/" + cutepokemon[c][1] + ".png");
+      document.getElementById("related-pokemon-image-" + c).setAttribute("alt", cutepokemon[c][0]);
+      document.getElementById("related-pokemon-link-" + c).setAttribute("href", "pokemon?" + cutepokemon[c][0]);
+      document.getElementById("related-pokemon-" + c).innerHTML = cutepokemon[c][0];
+      c++;
+    }
   }
-  var i = i + 1;
+  a++;
 }
 if (type == "") {
   window.location.replace("index");
