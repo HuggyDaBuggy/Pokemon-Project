@@ -14,6 +14,21 @@ var pokemons = {
   Shaymin: {type: "Cute", id: "492", number: 13, info: ""},
   Meloetta: {type: "Cute", id: "648", number: 14, info: ""},
   Absol: {type: "Cute", id: "359", number: 15, info: ""},
+  Jynx: {type: "Ugly", id: "124", number: 1, info: ""},
+  Probopass: {type: "Ugly", id: "476", number: 2, info: ""},
+  Garbodor: {type: "Ugly", id: "569", number: 3, info: ""},
+  Conkelgurr: {type: "Ugly", id: "534", number: 4, info: ""},
+  Barbaracla: {type: "Ugly", id: "689", number: 5, info: ""},
+  Stunfisk: {type: "Ugly", id: "618", number: 6, info: ""},
+  Seismitoad: {type: "Ugly", id: "537", number: 7, info: ""},
+  Purugly: {type: "Ugly", id: "432", number: 8, info: ""},
+  Muk: {type: "Ugly", id: "089", number: 9, info: ""},
+  Drowzee: {type: "Ugly", id: "096", number: 10, info: ""},
+  Swampert: {type: "Ugly", id: "260", number: 11, info: ""},
+  Walrein: {type: "Ugly", id: "365", number: 12, info: ""},
+  Malmar: {type: "Ugly", id: "687", number: 13, info: ""},
+  Noivern: {type: "Ugly", id: "715", number: 14, info: ""},
+  Skuntank: {type: "Ugly", id: "435", number: 15, info: ""},
 };
 var url = window.location.href;
 var urlsplit = url.split("?");
