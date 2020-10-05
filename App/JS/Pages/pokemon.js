@@ -72,8 +72,8 @@ var type = "";
 if (pokemons.includes(pokemon)) {
   document.title = "Pokemon - " + pokemon;
   document.getElementById("pokemon-name").innerHTML = pokemon;
-  document.getElementById("pokemon-stats-title").innerHTML = pokemon + " Info";
-  document.getElementById("pokemon-info-title").innerHTML = pokemon + " Stats";
+  document.getElementById("pokemon-info-title").innerHTML = pokemon + " Info";
+  document.getElementById("pokemon-stats-title").innerHTML = pokemon + " Stats";
   document.getElementById(pokemon + "-link").setAttribute("href", "javascript: void(0)");
   document.getElementById(pokemon + "-link").style.cursor = "default";
   document.getElementById(pokemon + "-link").style.fontWeight = "bold";
