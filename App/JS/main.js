@@ -13,7 +13,7 @@ window.onscroll = function () {
   document.getElementById("context-menu").style.display = "none";
 };
 function contextMenu(event) {
-  document.getElementById("context-menu").style.left = event.clientX + "px";
-  document.getElementById("context-menu").style.top = event.clientY + "px";
+  document.getElementById("context-menu").style.left = event.clientX - 17 + "px";
+  document.getElementById("context-menu").style.top = event.clientY - 17 + "px";
   document.getElementById("context-menu").style.display = "block";
 }
