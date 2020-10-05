@@ -52,6 +52,7 @@ a:visited {
 }
 a:hover {
   color: blue;
+  cursor: pointer;
 }
 /*Dropdown Content*/
 .dropdown {

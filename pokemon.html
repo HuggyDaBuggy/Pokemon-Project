@@ -10,7 +10,40 @@
     <meta content="#FF8C00" data-react-helmet="true" name="theme-color" />
     <link rel="icon" type="image/gif/png" href="App/Images/icon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
-    <title>Pokemon - #</title>
+    <title>Pokemon - </title>
+    <style>
+      .mySlides {
+        display: none;
+      }
+      img {
+        vertical-align: middle;
+      }
+      .slideshow-container {
+        position: relative;
+        margin: auto;
+      }
+      .text {
+        padding: 8px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #717171;
+      }
+    </style>
   </head>
   <body>
     <div class="box-main" id="context-menu" style="display: none; position: fixed; width: 10%; padding: 0.5%; z-index: 2000">
@@ -78,33 +111,53 @@
         </div>
       </div>
     </header>
-    <h1 id="pokemon-name">#</h1>
+    <h1 id="pokemon-name"></h1>
     <div class="box-main">
       <div class="box-sub" style="width: 45%; height: 45%; float: left">
-        <h3 id="pokemon-stats-title">#</h3>
-        <p style="text-align: left" id="pokemon-stats">#</p>
-        <h3 id="pokemon-info-title">#</h3>
-        <p style="text-align: left" id="pokemon-info">#</p>
+        <h3 id="pokemon-stats-title"></h3>
+        <p style="text-align: left" id="pokemon-stats"></p>
+        <h3 id="pokemon-info-title"></h3>
+        <p style="text-align: left" id="pokemon-info"></p>
+      </div>      
+      <img class="box-sub" src="App/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image" />
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img class="box-sub" src="App/Images/icon.png" alt="" width="75%" height="75%" />
+          <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+          <img class="box-sub" src="App/Images/icon.png" alt="" width="75%" height="75%" />
+          <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+          <img class="box-sub" src="App/Images/icon.png" alt="" width="75%" height="75%" />
+          <div class="text"></div>
+        </div>
       </div>
-      <img class="box-sub" style="width: 45%; height: 45%" src="App/Images/Pokemon/#.png" alt="#" width="75%" height="75%" id="pokemon-image" />
+      <br />
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
     </div>
-    <h3 id="related-pokemon">#</h3>
+    <h3 id="related-pokemon"></h3>
     <div class="box-main">
       <a href="pokemon?" class="box-sub" style="width: 20%; height: 20%" id="related-pokemon-link-1"
-        ><img src="App/Images/Pokemon/#.png" alt="#" width="50%" height="50%" id="related-pokemon-image-1" /><br />
-        <p id="related-pokemon-1">#</p></a
+        ><img src="App/Images/icon.png" alt="" width="50%" height="50%" id="related-pokemon-image-1" /><br />
+        <p id="related-pokemon-1"></p></a
       >
       <a href="pokemon?" class="box-sub" style="width: 20%; height: 20%" id="related-pokemon-link-2"
-        ><img src="App/Images/Pokemon/#.png" alt="#" width="50%" height="50%" id="related-pokemon-image-2" /><br />
-        <p id="related-pokemon-2">#</p></a
+        ><img src="App/Images/icon.png" alt="" width="50%" height="50%" id="related-pokemon-image-2" /><br />
+        <p id="related-pokemon-2"></p></a
       >
       <a href="pokemon?" class="box-sub" style="width: 20%; height: 20%" id="related-pokemon-link-3"
-        ><img src="App/Images/Pokemon/#.png" alt="#" width="50%" height="50%" id="related-pokemon-image-3" /><br />
-        <p id="related-pokemon-3">#</p></a
+        ><img src="App/Images/icon.png" alt="" width="50%" height="50%" id="related-pokemon-image-3" /><br />
+        <p id="related-pokemon-3"></p></a
       >
       <a href="pokemon?" class="box-sub" style="width: 20%; height: 20%" id="related-pokemon-link-4"
-        ><img src="App/Images/Pokemon/#.png" alt="#" width="50%" height="50%" id="related-pokemon-image-4" /><br />
-        <p id="related-pokemon-4">#</p></a
+        ><img src="App/Images/icon.png" alt="" width="50%" height="50%" id="related-pokemon-image-4" /><br />
+        <p id="related-pokemon-4"></p></a
       >
     </div>
     <footer class="box-main" style="font-size: 60%; display: flex">
