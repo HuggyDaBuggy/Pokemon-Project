@@ -32,7 +32,7 @@ var pokemons = [
 ];
 var cutepokemon = [
   ["Pikachu", "025", "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt."],
-  ["Eevee", "133", "The evolution pokémon. Eevee is most well known for the largest amount of possible evolutions- 8 in total."],
+  ["Eevee", "133", "The evolution pokémon. Eevee is most well known for the largest amount of possible evolutions - 8 in total."],
   ["Mew", "151", "The new species pokémon. This mythical creature possesses the genetic information of every Pokémon and is rarely seen"],
   ["Togepi", "175", "The spike ball pokémon. It's shell is said to contain happiness and Togepi often shares it with others of pure intent"],
   ["Skitty", "300", "The kitten pokémon. Skitty likes to chase it's own tail until it falls dizzy. It is very popular as a pet."],
@@ -150,6 +150,9 @@ while (a < 15) {
 
 var slideIndex = 1;
 showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
