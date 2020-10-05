@@ -1,14 +1,25 @@
 ::-webkit-scrollbar {
-  display: none;
+  width: 0.5em;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f2f6fc;
+  border: 0.05em solid #000000;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c1d4f1;
 }
 body {
-  background-color: white;
+  background-color: #ffffff;
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
 .box-main {
   background-color: #f2f6fc;
-  border: 1px solid #000000;
+  border: 0.05em solid #000000;
   border-radius: 10px;
   margin: 1%;
   align-content: center;
@@ -17,7 +28,7 @@ body {
 }
 .box-sub {
   background-color: #ffffff;
-  border: 1px solid #000000;
+  border: 0.05em solid #000000;
   border-radius: 10px;
   width: 28%;
   height: 28%;
