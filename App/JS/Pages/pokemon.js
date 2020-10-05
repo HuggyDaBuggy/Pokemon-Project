@@ -27,15 +27,15 @@ var pokemons = [
   "Swampert",
   "Walrein",
   "Malmar",
-  "Malmar",
-  "Malmar",
+  "Noivern",
+  "Skuntank",
 ];
 var cutepokemon = [
-  ["Pikachu", "025", "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt. "],
+  ["Pikachu", "025", "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt."],
   ["Eevee", "133", "The evolution pokémon. Eevee is most well known for the largest amount of possible evolutions- 8 in total."],
   ["Mew", "151", "The new species pokémon. This mythical creature possesses the genetic information of every Pokémon and is rarely seen"],
   ["Togepi", "175", "The spike ball pokémon. It's shell is said to contain happiness and Togepi often shares it with others of pure intent"],
-  ["Skitty", "300", "The kitten pokémon. Skitty likes to chase it's own tail until it falls dizzy. It is very popular as a pet. "],
+  ["Skitty", "300", "The kitten pokémon. Skitty likes to chase it's own tail until it falls dizzy. It is very popular as a pet."],
   ["Vulpix", "037", "The fox pokémon. It is able to control a flame in it's mouth that never goes out. As it grows, it's tails split to make more"],
   ["Emolga", "587", ""],
   ["Deerling", "585", ""],
@@ -61,8 +61,8 @@ var uglypokemon = [
   ["Swampert", "260", "", ""],
   ["Walrein", "365", "", ""],
   ["Malmar", "687", "", ""],
-  ["Malmar", "715", "", ""],
-  ["Malmar", "435", "", ""],
+  ["Noivern", "715", "", ""],
+  ["Skuntank", "435", "", ""],
 ];
 var pokemon = window.location.href.split("?")[1];
 var a = 0;
