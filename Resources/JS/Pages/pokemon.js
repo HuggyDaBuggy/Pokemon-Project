@@ -37,7 +37,7 @@ var cutepokemon = [
   ["Togepi", "175", "The spike ball pokémon. It's shell is said to contain happiness and Togepi often shares it with others of pure intent.", "", 3],
   ["Skitty", "300", "The kitten pokémon. Skitty likes to chase it's own tail until it falls dizzy. It is very popular as a pet.", "", 2],
   ["Vulpix", "037", "The fox pokémon. It is able to control a flame in it's mouth that never goes out. As it grows, it's tails split to make more.", "", 2],
-  ["Emolga", "587", "", "", 1],
+  ["Emolga", "587", "The sky squirrel pokémon. It glides around uith it's ", "", 1],
   ["Deerling", "585", "", "", 2],
   ["Snom", "872", "", "", 2],
   ["Teddiursa", "216", "", "", 2],
