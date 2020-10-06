@@ -87,7 +87,7 @@ while (a < 15) {
     document.getElementById("related-pokemon").innerHTML = "Other Cute Pokemon";
     document.getElementById("pokemon-info").innerHTML = cutepokemon[a][2];
     document.getElementById("pokemon-stats").innerHTML = cutepokemon[a][3];
-    document.getElementById("pokemon-image-1").setAttribute("src", "App/Images/Pokemon/Cute/" + cutepokemon[a][1] + ".png");
+    document.getElementById("pokemon-image-1").setAttribute("src", "Resources/Images/Pokemon/Cute/" + cutepokemon[a][1] + ".png");
     document.getElementById("pokemon-image-1").setAttribute("alt", pokemon);
     if (cutepokemon[a][4] == 1) {
       document.getElementById("pokemon-controls").style.display = "none";
@@ -111,7 +111,7 @@ while (a < 15) {
           bb = 1;
         }
       }
-      document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("src", "App/Images/Pokemon/Cute/" + cutepokemon[bb][1] + ".png");
+      document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("src", "Resources/Images/Pokemon/Cute/" + cutepokemon[bb][1] + ".png");
       document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("alt", cutepokemon[bb][0]);
       document.getElementById("related-pokemon-link-" + (b + 1)).setAttribute("href", "pokemon?" + cutepokemon[bb][0]);
       document.getElementById("related-pokemon-" + (b + 1)).innerHTML = cutepokemon[bb][0];
@@ -122,7 +122,7 @@ while (a < 15) {
     document.getElementById("related-pokemon").innerHTML = "Other Ugly Pokemon";
     document.getElementById("pokemon-info").innerHTML = uglypokemon[a][2];
     document.getElementById("pokemon-stats").innerHTML = uglypokemon[a][3];
-    document.getElementById("pokemon-image-1").setAttribute("src", "App/Images/Pokemon/Ugly/" + uglypokemon[a][1] + ".png");
+    document.getElementById("pokemon-image-1").setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[a][1] + ".png");
     document.getElementById("pokemon-image-1").setAttribute("alt", pokemon);
     if (uglypokemon[a][4] == 1) {
       document.getElementById("pokemon-controls").style.display = "none";
@@ -145,7 +145,7 @@ while (a < 15) {
           cc = 1;
         }
       }
-      document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("src", "App/Images/Pokemon/Ugly/" + uglypokemon[cc][1] + ".png");
+      document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[cc][1] + ".png");
       document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("alt", uglypokemon[cc][0]);
       document.getElementById("related-pokemon-link-" + (c + 1)).setAttribute("href", "pokemon?" + uglypokemon[cc][0]);
       document.getElementById("related-pokemon-" + (c + 1)).innerHTML = uglypokemon[cc][0];
