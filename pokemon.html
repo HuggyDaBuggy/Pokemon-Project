@@ -12,9 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
     <title>Pokemon -</title>
     <style>
-      .mySlides {
-        display: none;
-      }
       img {
         vertical-align: middle;
       }
@@ -37,7 +34,6 @@
         background-color: #bbb;
         border-radius: 50%;
         display: inline-block;
-        transition: background-color 0.6s ease;
       }
       .active,
       .dot:hover {
@@ -120,15 +116,15 @@
         <p style="text-align: left" id="pokemon-info"></p>
       </div>
       <div class="slideshow-container">
-        <div class="mySlides fade">
+        <div class="slides" style="display: none;">
           <img class="box-sub" src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-1" />
           <div class="text" id="pokemon-image-text-1"></div>
         </div>
-        <div class="mySlides fade">
+        <div class="slides" style="display: none;">
           <img class="box-sub" src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-2" />
           <div class="text" id="pokemon-image-text-2"></div>
         </div>
-        <div class="mySlides fade">
+        <div class="slides" style="display: none;" id="slides-3">
           <img class="box-sub" src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-3" />
           <div class="text" id="pokemon-image-text-3"></div>
         </div>
@@ -138,7 +134,7 @@
         <span style="user-select: none; cursor: pointer" onclick="plusSlides(-1)">&larr;</span>
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(3)" id="image-dots-3"></span>
         <span style="user-select: none; cursor: pointer" onclick="plusSlides(1)">&rarr;</span>
       </div>
     </div>
