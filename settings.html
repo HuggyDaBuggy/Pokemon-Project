@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="Resources/CSS/style.css" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href="Resources/CSS/Themes/dark.css" id="theme-style" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="Cute and Ugly Pokemon - Settings" property="og:title" />
@@ -80,16 +82,16 @@
     </header>
     <h1>Site Settings</h1>
     <div class="box-main">
-        <h3>Main Site</h3>
-        <div class="box-sub" style="width: 95%">
-          <p>Theme</p>
-          <span id="theme-button" style="user-select: none; cursor: pointer; font-size: 200%">&#9728; &#9790;</span>
-        </div>
-        <h3>Pokemon Page</h3>
-        <div class="box-sub" style="width: 95%">
-          <p>Auto Change Slideshow Image</p>
-          <input type="checkbox" id="auto-slideshow" onchange="slideshowImage()">
-        </div>
+      <h3>Main Site</h3>
+      <div class="box-sub" style="width: 95%">
+        <p>Theme</p>
+        <span id="theme-button" style="user-select: none; cursor: pointer; font-size: 200%" onclick="themeChange()"></span>
+      </div>
+      <h3>Pokemon Page</h3>
+      <div class="box-sub" style="width: 95%">
+        <p>Auto Change Slideshow Image</p>
+        <input type="checkbox" id="auto-slideshow" onchange="slideshowImage()" />
+      </div>
     </div>
     <footer class="box-main" style="font-size: 60%; display: flex">
       <p><b>Site Settings</b></p>
