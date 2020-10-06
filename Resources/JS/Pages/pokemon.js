@@ -31,38 +31,38 @@ var pokemons = [
   "Skuntank",
 ];
 var cutepokemon = [
-  ["Pikachu", "025", "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt. Females have hearted tails and males have straight cut.", "", 3, ["", "", ""]],
-  ["Eevee", "133", "The evolution pokémon. Eevee is most well known for the largest amount of possible evolutions. Vaporeon, Flareon, Jolteon, Espeon, Umbreon, Leafeon, Glaceon and finally Sylveon are all the possible evolutions at the time of this writing.", "", 2, ["", ""]],
-  ["Mew", "151", "The new species pokémon. This mythical creature possesses the genetic information of every Pokémon. It tends to stay hidden, and only a few sightings have been reported.", "", 1],
-  ["Togepi", "175", "The spike ball pokémon. It's shell is said to contain happiness and other warm fuzzies. Togepi often shares the feeling with others of pure intent.", "", 3, ["", "", ""]],
-  ["Skitty", "300", "The kitten pokémon. Skitty likes to chase it's own tail until it falls dizzy. It's cute, aloof demeanour makes it very popular as a household pet.", "", 2, ["", ""]],
-  ["Vulpix", "037", "The fox pokémon. It is able to control a flame in it's mouth that never goes out. It is born with only one tail, but as it gets older it splits and creates more tails.", "", 2, ["", ""]],
-  ["Emolga", "587", "The sky squirrel pokémon. It glides around with it's cape-like membrane, crackling with electricity as it goes. It often collects berries and stores them in it's cheeks.", "", 1],
-  ["Deerling", "585", "", "", 2, ["", ""]],
-  ["Snom", "872", "", "", 2, ["", ""]],
-  ["Teddiursa", "216", "", "", 2, ["", ""]],
-  ["Jirachi", "385", "", "", 1],
-  ["Jigglypuff", "039", "", "", 3, ["", "", ""]],
-  ["Shaymin", "492", "", "", 1],
-  ["Meloetta", "648", "", "", 1],
-  ["Absol", "359", "", "", 1],
+  ["Pikachu", "025", "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt. Females have hearted tails and males have straight cut.", "", 3, ["", "", ""], 2],
+  ["Eevee", "133", "The evolution pokémon. Eevee is most well known for the largest amount of possible evolutions. Vaporeon, Flareon, Jolteon, Espeon, Umbreon, Leafeon, Glaceon and finally Sylveon are all the possible evolutions at the time of this writing.", "", 2, ["", ""], 1],
+  ["Mew", "151", "The new species pokémon. This mythical creature possesses the genetic information of every Pokémon. It tends to stay hidden, and only a few sightings have been reported.", "", 1, 1],
+  ["Togepi", "175", "The spike ball pokémon. It's shell is said to contain happiness and other warm fuzzies. Togepi often shares the feeling with others of pure intent.", "", 3, ["", "", ""], 1],
+  ["Skitty", "300", "The kitten pokémon. Skitty likes to chase it's own tail until it falls dizzy. It's cute, aloof demeanour makes it very popular as a household pet.", "", 2, ["", ""], 1],
+  ["Vulpix", "037", "The fox pokémon. It is able to control a flame in it's mouth that never goes out. It is born with only one tail, but as it gets older it splits and creates more tails.", "", 2, ["", ""], 1],
+  ["Emolga", "587", "The sky squirrel pokémon. It glides around with it's cape-like membrane, crackling with electricity as it goes. It often collects berries and stores them in it's cheeks.", "", 1, 1],
+  ["Deerling", "585", "", "", 2, ["", ""], 1],
+  ["Snom", "872", "", "", 2, ["", ""], 1],
+  ["Teddiursa", "216", "", "", 2, ["", ""], 1],
+  ["Jirachi", "385", "", "", 1, 1],
+  ["Jigglypuff", "039", "", "", 3, ["", "", ""], 2],
+  ["Shaymin", "492", "", "", 1, 1],
+  ["Meloetta", "648", "", "", 1, 1],
+  ["Absol", "359", "", "", 1, 1],
 ];
 var uglypokemon = [
-  ["Jynx", "124", "", "", 2, ["", ""]],
-  ["Probopass", "476", "", "", 2, ["", ""]],
-  ["Garbodor", "569", "", "", 2, ["", ""]],
-  ["Conkeldurr", "534", "", "", 3, ["", "", ""]],
-  ["Barbaracle", "689", "", "", 2, ["", ""]],
-  ["Stunfisk", "618", "", "", 1],
-  ["Seismitoad", "537", "", "", 3, ["", "", ""]],
-  ["Purugly", "432", "", "", 2, ["", ""]],
-  ["Muk", "089", "", "", 2, ["", ""]],
-  ["Drowzee", "096", "", "", 2, ["", ""]],
-  ["Swampert", "260", "", "", 3, ["", "", ""]],
-  ["Walrein", "365", "", "", 3, ["", "", ""]],
-  ["Malamar", "687", "", "", 2, ["", ""]],
-  ["Noivern", "715", "", "", 2, ["", ""]],
-  ["Skuntank", "435", "", "", 2, ["", ""]],
+  ["Jynx", "124", "", "", 2, ["", ""], 2],
+  ["Probopass", "476", "", "", 2, ["", ""], 2],
+  ["Garbodor", "569", "", "", 2, ["", ""], 2],
+  ["Conkeldurr", "534", "", "", 3, ["", "", ""], 3],
+  ["Barbaracle", "689", "", "", 2, ["", ""], 2],
+  ["Stunfisk", "618", "", "", 1, 1],
+  ["Seismitoad", "537", "", "", 3, ["", "", ""], 3],
+  ["Purugly", "432", "", "", 2, ["", ""], 2],
+  ["Muk", "089", "", "", 2, ["", ""], 2],
+  ["Drowzee", "096", "", "", 2, ["", ""], 1],
+  ["Swampert", "260", "", "", 3, ["", "", ""], 3],
+  ["Walrein", "365", "", "", 3, ["", "", ""], 3],
+  ["Malamar", "687", "", "", 2, ["", ""], 2],
+  ["Noivern", "715", "", "", 2, ["", ""], 2],
+  ["Skuntank", "435", "", "", 2, ["", ""], 2],
 ];
 var pokemon = window.location.href.split("?")[1];
 var a = 0;
@@ -89,6 +89,7 @@ while (a < 15) {
     document.getElementById("pokemon-stats").innerHTML = cutepokemon[a][3];
     document.getElementById("pokemon-image-1").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/1.png");
     document.getElementById("pokemon-image-1").setAttribute("alt", pokemon);
+    var slide = cutepokemon[a][6];
     if (cutepokemon[a][4] == 1) {
       document.getElementById("pokemon-controls").style.display = "none";
       document.getElementById("pokemon-image-text-1").style.display = "none";
@@ -135,6 +136,7 @@ while (a < 15) {
     document.getElementById("pokemon-stats").innerHTML = uglypokemon[a][3];
     document.getElementById("pokemon-image-1").setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[a][1] + ".png");
     document.getElementById("pokemon-image-1").setAttribute("alt", pokemon);
+    var slide = uglypokemon[a][6];
     if (uglypokemon[a][4] == 1) {
       document.getElementById("pokemon-controls").style.display = "none";
       document.getElementById("pokemon-image-text-1").style.display = "none";
@@ -177,8 +179,6 @@ while (a < 15) {
   }
   a++;
 }
-
-var slide = 1;
 showSlides(slide);
 function plusSlides(s) {
   showSlides((slide += s));
