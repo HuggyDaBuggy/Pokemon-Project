@@ -31,13 +31,44 @@ var pokemons = [
   "Skuntank",
 ];
 var cutepokemon = [
-  ["Pikachu", "025", "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt. Females have hearted tails and males have straight cut.", "", 3, ["", "", ""], 2],
-  ["Eevee", "133", "The evolution pokémon. Eevee is most well known for the largest amount of possible evolutions. Vaporeon, Flareon, Jolteon, Espeon, Umbreon, Leafeon, Glaceon and finally Sylveon are all the possible evolutions at the time of this writing.", "", 2, ["", ""], 1],
+  [
+    "Pikachu",
+    "025",
+    "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt. Females have hearted tails and males have straight cut.",
+    "",
+    3,
+    ["", "", ""],
+    2,
+  ],
+  [
+    "Eevee",
+    "133",
+    "The evolution pokémon. Eevee is most well known for the largest amount of possible evolutions. Vaporeon, Flareon, Jolteon, Espeon, Umbreon, Leafeon, Glaceon and finally Sylveon are all the possible evolutions at the time of this writing.",
+    "",
+    2,
+    ["", ""],
+    1,
+  ],
   ["Mew", "151", "The new species pokémon. This mythical creature possesses the genetic information of every Pokémon. It tends to stay hidden, and only a few sightings have been reported.", "", 1, 1],
   ["Togepi", "175", "The spike ball pokémon. It's shell is said to contain happiness and other warm fuzzies. Togepi often shares the feeling with others of pure intent.", "", 3, ["", "", ""], 1],
   ["Skitty", "300", "The kitten pokémon. Skitty likes to chase it's own tail until it falls dizzy. It's cute, aloof demeanour makes it very popular as a household pet.", "", 2, ["", ""], 1],
-  ["Vulpix", "037", "The fox pokémon. It is able to control a flame in it's mouth that never goes out. It is born with only one tail, but as it gets older it splits and creates more tails.", "", 2, ["", ""], 1],
-  ["Emolga", "587", "The sky squirrel pokémon. It glides around with it's cape-like membrane, crackling with electricity as it goes. It often collects berries and stores them in it's cheeks.", "", 1, 1],
+  [
+    "Vulpix",
+    "037",
+    "The fox pokémon. It is able to control a flame in it's mouth that never goes out. It is born with only one tail, but as it gets older it splits and creates more tails.",
+    "",
+    2,
+    ["", ""],
+    1,
+  ],
+  [
+    "Emolga",
+    "587",
+    "The sky squirrel pokémon. It glides around with it's cape-like membrane, crackling with electricity as it goes. It often collects berries and stores them in it's cheeks.",
+    "",
+    1,
+    1,
+  ],
   ["Deerling", "585", "", "", 2, ["", ""], 1],
   ["Snom", "872", "", "", 2, ["", ""], 1],
   ["Teddiursa", "216", "", "", 2, ["", ""], 1],
@@ -152,30 +183,30 @@ while (a < 15) {
       document.getElementById("pokemon-image-3").setAttribute("alt", uglypokemon[a][5][2]);
       document.getElementById("pokemon-image-text-3").innerHTML = uglypokemon[a][5][2];
     }
-      while (c < 4) {
-        if (c < 2) {
-          var cc = a - 2 + c;
-          if (cc == -1) {
-            cc = 14;
-          }
-          if (cc == -2) {
-            cc = 13;
-          }
-        } else {
-          var cc = a - 1 + c;
-          if (cc == 15) {
-            cc = 0;
-          }
-          if (cc == 16) {
-            cc = 1;
-          }
+    while (c < 4) {
+      if (c < 2) {
+        var cc = a - 2 + c;
+        if (cc == -1) {
+          cc = 14;
         }
-        document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[cc][0] + "/1.png");
-        document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("alt", uglypokemon[cc][0]);
-        document.getElementById("related-pokemon-link-" + (c + 1)).setAttribute("href", "pokemon?" + uglypokemon[cc][0]);
-        document.getElementById("related-pokemon-" + (c + 1)).innerHTML = uglypokemon[cc][0];
-        c++;
+        if (cc == -2) {
+          cc = 13;
+        }
+      } else {
+        var cc = a - 1 + c;
+        if (cc == 15) {
+          cc = 0;
+        }
+        if (cc == 16) {
+          cc = 1;
+        }
       }
+      document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[cc][0] + "/1.png");
+      document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("alt", uglypokemon[cc][0]);
+      document.getElementById("related-pokemon-link-" + (c + 1)).setAttribute("href", "pokemon?" + uglypokemon[cc][0]);
+      document.getElementById("related-pokemon-" + (c + 1)).innerHTML = uglypokemon[cc][0];
+      c++;
+    }
   }
   a++;
 }
