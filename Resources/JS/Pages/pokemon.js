@@ -122,7 +122,7 @@ while (a < 15) {
           bb = 1;
         }
       }
-      document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("src", "Resources/Images/Pokemon/Cute/" + cutepokemon[bb][1] + ".png");
+      document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("src", "Resources/Images/Pokemon/Cute/" + cutepokemon[bb][0] + "/1.png");
       document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("alt", cutepokemon[bb][0]);
       document.getElementById("related-pokemon-link-" + (b + 1)).setAttribute("href", "pokemon?" + cutepokemon[bb][0]);
       document.getElementById("related-pokemon-" + (b + 1)).innerHTML = cutepokemon[bb][0];
@@ -139,7 +139,16 @@ while (a < 15) {
       document.getElementById("pokemon-controls").style.display = "none";
       document.getElementById("pokemon-image-text-1").style.display = "none";
     } else if (uglypokemon[a][4] == 2) {
+      document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
+      document.getElementById("pokemon-image-2").setAttribute("alt", uglypokemon[a][5][1]);
+      document.getElementById("pokemon-image-text-3").innerHTML = uglypokemon[a][5][1];
     } else if (uglypokemon[a][4] == 3) {
+      document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
+      document.getElementById("pokemon-image-2").setAttribute("alt", uglypokemon[a][5][1]);
+      document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][5][1];
+      document.getElementById("pokemon-image-3").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/3.png");
+      document.getElementById("pokemon-image-3").setAttribute("alt", uglypokemon[a][5][2]);
+      document.getElementById("pokemon-image-text-3").innerHTML = uglypokemon[a][5][2];
     }
       while (c < 4) {
         if (c < 2) {
@@ -159,7 +168,7 @@ while (a < 15) {
             cc = 1;
           }
         }
-        document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[cc][1] + ".png");
+        document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[cc][0] + "/1.png");
         document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("alt", uglypokemon[cc][0]);
         document.getElementById("related-pokemon-link-" + (c + 1)).setAttribute("href", "pokemon?" + uglypokemon[cc][0]);
         document.getElementById("related-pokemon-" + (c + 1)).innerHTML = uglypokemon[cc][0];
