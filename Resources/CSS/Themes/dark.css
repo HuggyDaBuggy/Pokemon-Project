@@ -1,0 +1,28 @@
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f2f6fc;
+  border: 0.05em solid #000000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c1d4f1;
+}
+body {
+  background-color: #ffffff;
+}
+.box-main {
+  background-color: #f2f6fc;
+  border: 0.05em solid #000000;
+}
+.box-sub {
+  background-color: #ffffff;
+  border: 0.05em solid #000000;
+}
+a:link,
+a:visited {
+  color: #000000;
+}
+a:hover {
+  color: blue;
+}
