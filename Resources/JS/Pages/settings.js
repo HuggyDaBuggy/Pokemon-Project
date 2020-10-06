@@ -3,7 +3,6 @@ if (getStorage("Theme") == "Dark") {
   } else {
     document.getElementById("theme-button").innerHTML = "&#9728;";
   }
-
 function themeChange() {
   if (getStorage("Theme") == "Dark") {
     setStorage("Theme", "Light")
