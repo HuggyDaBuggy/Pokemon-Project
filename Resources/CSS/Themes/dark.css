@@ -21,6 +21,9 @@ a:link,
 a:visited {
   color: #ffffff;
 }
+a:hover {
+  color: #0000ff;
+}
 #dropdown-content {
   box-shadow: 0em 0.4em 0.8em 0em #00000080;
 }

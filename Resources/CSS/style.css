@@ -40,7 +40,6 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: blue;
   cursor: pointer;
 }
 /*Dropdown Content*/
