@@ -69,7 +69,7 @@ var a = 0;
 var b = 0;
 var c = 0;
 var type = "";
-if (pokemons.includes(pokemon)) {
+if (pokemon.includes(pokemon)) {
   document.title = "Pokemon - " + pokemon;
   document.getElementById("pokemon-name").innerHTML = pokemon;
   document.getElementById("pokemon-info-title").innerHTML = pokemon + " Info";
@@ -92,7 +92,7 @@ while (a < 15) {
     var slide = cutepokemon[a][6];
     if (cutepokemon[a][4] == 1) {
       document.getElementById("pokemon-controls").style.display = "none";
-      document.getElementById("pokemon-image-text-1").innerHTML = uglypokemon[a][5];
+      document.getElementById("pokemon-image-text-1").innerHTML = cutepokemon[a][5];
     } else if (cutepokemon[a][4] == 2) {
       document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
       document.getElementById("pokemon-image-2").setAttribute("alt", cutepokemon[a][5][1]);
@@ -100,12 +100,16 @@ while (a < 15) {
       document.getElementById("image-dots-3").style.display = "none";
       document.getElementById("image-dots-3").className = "unused";
       document.getElementById("slides-3").className = "unused";
+      document.getElementById("pokemon-image-text-1").innerHTML = cutepokemon[a][5][0];
+      document.getElementById("pokemon-image-text-2").innerHTML = cutepokemon[a][5][1];
     } else if (cutepokemon[a][4] == 3) {
       document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
       document.getElementById("pokemon-image-2").setAttribute("alt", cutepokemon[a][5][1]);
       document.getElementById("pokemon-image-text-2").innerHTML = cutepokemon[a][5][1];
       document.getElementById("pokemon-image-3").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/3.png");
       document.getElementById("pokemon-image-3").setAttribute("alt", cutepokemon[a][5][2]);
+      document.getElementById("pokemon-image-text-1").innerHTML = cutepokemon[a][5][0];
+      document.getElementById("pokemon-image-text-2").innerHTML = cutepokemon[a][5][1];
       document.getElementById("pokemon-image-text-3").innerHTML = cutepokemon[a][5][2];
     }
     while (b < 4) {
@@ -149,12 +153,16 @@ while (a < 15) {
       document.getElementById("image-dots-3").style.display = "none";
       document.getElementById("image-dots-3").className = "unused";
       document.getElementById("slides-3").className = "unused";
+      document.getElementById("pokemon-image-text-1").innerHTML = uglypokemon[a][5][0];
+      document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][5][1];
     } else if (uglypokemon[a][4] == 3) {
       document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
       document.getElementById("pokemon-image-2").setAttribute("alt", uglypokemon[a][5][1]);
       document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][5][1];
       document.getElementById("pokemon-image-3").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/3.png");
       document.getElementById("pokemon-image-3").setAttribute("alt", uglypokemon[a][5][2]);
+      document.getElementById("pokemon-image-text-1").innerHTML = uglypokemon[a][5][0];
+      document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][5][1];
       document.getElementById("pokemon-image-text-3").innerHTML = uglypokemon[a][5][2];
     }
     while (c < 4) {
