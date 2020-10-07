@@ -45,9 +45,9 @@ var cutepokemon = [
   ["Snom", "872", "The worm pokémon. Its diet consists of snow it finds on the ground. As it eats more snow, the spikes on its back grow larger. It also uses a thread to weave a coccoon, disguising itslf as an icicle as it sleeps.", "", 2, ["", ""], 1],
   ["Teddiursa", "216", "The little bear pokémon. This pokemon often hoards food, most of all honey, in many hidden locations. This is to prepare for the harsh wintertimes, where food is scarce. ", "", 2, ["", ""], 1],
   ["Jirachi", "385", "The wish pokémon. Jirachi is a mythical pokemon which can be summonned by a specific ritual of song. It is said that if you write a wish and place it on it's head, the wish will come true, but only for the pure of heart ", "", 1, "", 1],
-  ["Jigglypuff", "039", "", "", 3, ["", "", ""], 2],
-  ["Shaymin", "492", "", "", 1, "", 1],
-  ["Meloetta", "648", "", "", 1, "", 1],
+  ["Jigglypuff", "039", "The balloon pokémon. It's voice is said to be magical and Jigglypuff is able to sing it's audience to sleep, as they relax and let the notes flow over them. It is said that nothing can resist it's song.", "", 3, ["", "", ""], 2],
+  ["Shaymin", "492", "The gratitude pokémon. Shaymin (in sky forme) fly in flocks, purifying the air and getting rid of all pollutants. It reverts to it's land forme when it touches a Gracidea flower, when it is night time or when it is frozen.", "", 1, "", 1],
+  ["Meloetta", "648", "The melody pokémon. The mythical Meloetta's voice can control the emotions of pokémon who happen to hear it's pure voice. Whether or not it can affect humans as well remains to be seen.  ", "", 1, "", 1],
   ["Absol", "359", "", "", 1, "", 1],
 ];
 //The uglypokemon array - used to display the correct information on the pokemon page
