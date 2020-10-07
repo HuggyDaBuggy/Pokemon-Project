@@ -30,7 +30,7 @@ window.onclick = function () {
 window.onscroll = function () {
   document.getElementById("context-menu").style.display = "none";
 };
-//Checks if it is the users first time on the site, then sets settings to defaults 
+//Checks if it is the users first time on the site, then sets settings to defaults
 if (getStorage("Theme") == null) {
   if (typeof Storage !== "undefined") {
     setStorage("Theme", "Dark");
