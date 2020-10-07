@@ -22,6 +22,7 @@
     <title>Pokemon - Cute</title>
   </head>
   <body>
+    <!-- Custom context menu div -->
     <div class="box-main" id="context-menu" style="display: none; position: fixed; width: 10%; padding: 0.5%; z-index: 2000">
       <a href="https://huggydabuggy.github.io/Pokemon-Project/"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Home</p></a>
       <p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left"><b>Cute Pokemon</b></p>
@@ -29,63 +30,64 @@
       <a href="polls"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Polls</p></a>
       <a href="settings"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Site Settings</p></a>
     </div>
-    <header class="box-main" style="display: flex">
-      <li><img src="Resources/Images/pokemon.png" height="47" /></li>
-      <li title="Home page">
+    <!-- Header content -->
+    <header class="box-main" style="display: flex; align-content: space-around">
+      <!-- Header image -->
+        <img src="Resources/Images/pokemon.png" height="47" />
+        <!-- Header home button -->
         <a href="https://huggydabuggy.github.io/Pokemon-Project/"><p>Home</p></a>
-      </li>
-      <div class="dropdown">
-        <li title="The cutest pokemon">
+        <div class="dropdown">
+          <!-- Header cute -->
           <p><b>Cute</b></p>
-        </li>
-        <div class="box-main" id="dropdown-content">
-          <a href="pokemon?Pikachu" title="Pikachu"><p>Pikachu</p></a>
-          <a href="pokemon?Eevee" title="Eevee"><p>Eevee</p></a>
-          <a href="pokemon?Mew" title="Mew"><p>Mew</p></a>
-          <a href="pokemon?Togepi" title="Togepi"><p>Togepi</p></a>
-          <a href="pokemon?Skitty" title="Skitty"><p>Skitty</p></a>
-          <a href="pokemon?Vulpix" title="Vulpix"><p>Vulpix</p></a>
-          <a href="pokemon?Emolga" title="Emolga"><p>Emolga</p></a>
-          <a href="pokemon?Deerling" title="Deerling"><p>Deerling</p></a>
-          <a href="pokemon?Snom" title="Snom"><p>Snom</p></a>
-          <a href="pokemon?Teddiursa" title="Teddiursa"><p>Teddiursa</p></a>
-          <a href="pokemon?Jirachi" title="Jirachi"><p>Jirachi</p></a>
-          <a href="pokemon?Jigglypuff" title="Jigglypuff"><p>Jigglypuff</p></a>
-          <a href="pokemon?Shaymin" title="Shaymin"><p>Shaymin</p></a>
-          <a href="pokemon?Meloetta" title="Meloetta"><p>Meloetta</p></a>
-          <a href="pokemon?Absol" title="Absol"><p>Absol</p></a>
+          <!-- Dropdown content -->
+          <div class="box-main" id="dropdown-content">
+            <a href="pokemon?Pikachu" title="Pikachu"><p>Pikachu</p></a>
+            <a href="pokemon?Eevee" title="Eevee"><p>Eevee</p></a>
+            <a href="pokemon?Mew" title="Mew"><p>Mew</p></a>
+            <a href="pokemon?Togepi" title="Togepi"><p>Togepi</p></a>
+            <a href="pokemon?Skitty" title="Skitty"><p>Skitty</p></a>
+            <a href="pokemon?Vulpix" title="Vulpix"><p>Vulpix</p></a>
+            <a href="pokemon?Emolga" title="Emolga"><p>Emolga</p></a>
+            <a href="pokemon?Deerling" title="Deerling"><p>Deerling</p></a>
+            <a href="pokemon?Snom" title="Snom"><p>Snom</p></a>
+            <a href="pokemon?Teddiursa" title="Teddiursa"><p>Teddiursa</p></a>
+            <a href="pokemon?Jirachi" title="Jirachi"><p>Jirachi</p></a>
+            <a href="pokemon?Jigglypuff" title="Jigglypuff"><p>Jigglypuff</p></a>
+            <a href="pokemon?Shaymin" title="Shaymin"><p>Shaymin</p></a>
+            <a href="pokemon?Meloetta" title="Meloetta"><p>Meloetta</p></a>
+            <a href="pokemon?Absol" title="Absol"><p>Absol</p></a>
+          </div>
         </div>
-      </div>
-      <div class="dropdown">
-        <li title="The ugliest pokemon">
+        <div class="dropdown">
+          <!-- Header ugly -->
           <a href="ugly"><p>Ugly</p></a>
-        </li>
-        <div class="box-main" id="dropdown-content">
-          <a href="pokemon?Jynx" title="Jynx"><p>Jynx</p></a>
-          <a href="pokemon?Probopass" title="Probopass"><p>Probopass</p></a>
-          <a href="pokemon?Garbodor" title="Garbodor"><p>Garbodor</p></a>
-          <a href="pokemon?Conkeldurr" title="Conkeldurr"><p>Conkeldurr</p></a>
-          <a href="pokemon?Barbacle" title="Barbaracle"><p>Barbaracle</p></a>
-          <a href="pokemon?Stunfisk" title="Stunfisk"><p>Stunfisk</p></a>
-          <a href="pokemon?Seismitoad" title="Seismitoad"><p>Seismitoad</p></a>
-          <a href="pokemon?Purugly" title="Purugly"><p>Purugly</p></a>
-          <a href="pokemon?Muk" title="Muk"><p>Muk</p></a>
-          <a href="pokemon?Drowzee" title="Drowzee"><p>Drowzee</p></a>
-          <a href="pokemon?Swampert" title="Swampert"><p>Swampert</p></a>
-          <a href="pokemon?Walrein" title="Walrein"><p>Walrein</p></a>
-          <a href="pokemon?Malamar" title="Malamar"><p>Malamar</p></a>
-          <a href="pokemon?Noivern" title="Noivern"><p>Noivern</p></a>
-          <a href="pokemon?Skuntank" title="Skuntank"><p>Skuntank</p></a>
+          <!-- Dropdown content -->
+          <div class="box-main" id="dropdown-content">
+            <a href="pokemon?Jynx" title="Jynx"><p>Jynx</p></a>
+            <a href="pokemon?Probopass" title="Probopass"><p>Probopass</p></a>
+            <a href="pokemon?Garbodor" title="Garbodor"><p>Garbodor</p></a>
+            <a href="pokemon?Conkeldurr" title="Conkeldurr"><p>Conkeldurr</p></a>
+            <a href="pokemon?Barbacle" title="Barbaracle"><p>Barbaracle</p></a>
+            <a href="pokemon?Stunfisk" title="Stunfisk"><p>Stunfisk</p></a>
+            <a href="pokemon?Seismitoad" title="Seismitoad"><p>Seismitoad</p></a>
+            <a href="pokemon?Purugly" title="Purugly"><p>Purugly</p></a>
+            <a href="pokemon?Muk" title="Muk"><p>Muk</p></a>
+            <a href="pokemon?Drowzee" title="Drowzee"><p>Drowzee</p></a>
+            <a href="pokemon?Swampert" title="Swampert"><p>Swampert</p></a>
+            <a href="pokemon?Walrein" title="Walrein"><p>Walrein</p></a>
+            <a href="pokemon?Malamar" title="Malamar"><p>Malamar</p></a>
+            <a href="pokemon?Noivern" title="Noivern"><p>Noivern</p></a>
+            <a href="pokemon?Skuntank" title="Skuntank"><p>Skuntank</p></a>
+          </div>
         </div>
-      </div>
-      <div class="dropdown">
-        <li title="Vote on polls">
+        <div class="dropdown">
+          <!-- Header polls -->
           <a href="polls"><p>Polls</p></a>
-        </li>
-        <div class="box-main" id="dropdown-content">
-          <a href="polls#"><p>Poll</p></a>
+          <!-- Dropdown content -->
+          <div class="box-main" id="dropdown-content">
+            <a href="polls#"><p>Poll</p></a>
+          </div>
         </div>
-      </div>
     </header>
     <h1>Cute Pokemon</h1>
     <div class="box-main">
