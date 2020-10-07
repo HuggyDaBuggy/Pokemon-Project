@@ -216,7 +216,10 @@ function showSlides(s) {
   }
   slides[slide - 1].style.display = "block";
   dots[slide - 1].className += " active"
-  setTimeout(function () {
-    showSlides((slide += 1));
-  }, 2000);
+  if (getStorage("AutoScroll") == "On") {
+    setTimeout(function () {
+      showSlides((slide += 1));
+    }, 2000);
+  }
+  
 }
