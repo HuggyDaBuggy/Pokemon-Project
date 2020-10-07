@@ -9,6 +9,10 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
+header {
+  display: flex;
+  align-content: space-around;
+}
 .box-main {
   border: 0.05em solid #000000;
   border-radius: 0.5em;
