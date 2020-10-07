@@ -8,6 +8,9 @@ function getStorage(name) {
     return(localStorage.getItem(name))
   }
 }
+function capitalize(input) {
+  return input[0].toUpperCase() + input.slice(1);
+}
 document.addEventListener(
   "contextmenu",
   function (rclick) {

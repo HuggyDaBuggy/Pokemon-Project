@@ -1,34 +1,34 @@
 var pokemons = [
-  "Pikachu",
-  "Eevee",
-  "Mew",
-  "Togepi",
-  "Skitty",
-  "Vulpix",
-  "Emolga",
-  "Deerling",
-  "Snom",
-  "Teddiursa",
-  "Jirachi",
-  "Jigglypuff",
-  "Shaymin",
-  "Meloetta",
-  "Absol",
-  "Jynx",
-  "Probopass",
-  "Garbodor",
-  "Conkeldurr",
-  "Barbaracle",
-  "Stunfisk",
-  "Seismitoad",
-  "Purugly",
-  "Muk",
-  "Drowzee",
-  "Swampert",
-  "Walrein",
-  "Malamar",
-  "Noivern",
-  "Skuntank",
+  "pikachu",
+  "eevee",
+  "mew",
+  "togepi",
+  "skitty",
+  "vulpix",
+  "emolga",
+  "deerling",
+  "snom",
+  "teddiursa",
+  "jirachi",
+  "jigglypuff",
+  "shaymin",
+  "meloetta",
+  "absol",
+  "jynx",
+  "probopass",
+  "garbodor",
+  "conkeldurr",
+  "barbaracle",
+  "stunfisk",
+  "seismitoad",
+  "purugly",
+  "muk",
+  "drowzee",
+  "swampert",
+  "walrein",
+  "malamar",
+  "noivern",
+  "skuntank",
 ];
 var cutepokemon = [
   ["Pikachu", "025", "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt. Females have hearted tails and males have straight cut.", "", 3, ["", "", ""], 2],
@@ -64,11 +64,12 @@ var uglypokemon = [
   ["Noivern", "715", "", "", 2, ["", ""], 2],
   ["Skuntank", "435", "", "", 2, ["", ""], 2],
 ];
-var pokemon = window.location.href.split("?")[1];
+var pokemon = window.location.href.split("?")[1].toLowerCase();
 var a = 0;
 var b = 0;
 var c = 0;
 if (pokemon.includes(pokemon)) {
+  var pokemon = capitalize(pokemon);
   document.title = "Pokemon - " + pokemon;
   document.getElementById("pokemon-name").innerHTML = pokemon;
   document.getElementById("pokemon-info-title").innerHTML = pokemon + " Info";
@@ -76,7 +77,6 @@ if (pokemon.includes(pokemon)) {
   document.getElementById(pokemon + "-link").setAttribute("href", "javascript: void(0)");
   document.getElementById(pokemon + "-link").style.cursor = "default";
   document.getElementById(pokemon + "-link").style.fontWeight = "bold";
-  document.getElementById(pokemon + "-link").style.color = "#000000";
 } else {
   window.history.back();
   window.location.replace("https://huggydabuggy.github.io/Pokemon-Project/");
