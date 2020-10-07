@@ -1,11 +1,11 @@
 function setStorage(name, value) {
-  if (typeof (Storage) !== "undefined") {
-    return(localStorage.setItem(name, value))
+  if (typeof Storage !== "undefined") {
+    return localStorage.setItem(name, value);
   }
 }
 function getStorage(name) {
-  if (typeof (Storage) !== "undefined") {
-    return(localStorage.getItem(name))
+  if (typeof Storage !== "undefined") {
+    return localStorage.getItem(name);
   }
 }
 function capitalize(input) {
@@ -26,9 +26,9 @@ window.onscroll = function () {
   document.getElementById("context-menu").style.display = "none";
 };
 if (getStorage("Theme") == null) {
-  if (typeof (Storage) !== "undefined") {
-    setStorage("Theme", "Dark")
-    setStorage("ImageScroll", "Off")
+  if (typeof Storage !== "undefined") {
+    setStorage("Theme", "Dark");
+    setStorage("ImageScroll", "Off");
   } else {
     alert("Your browser does not support local storage, this will cause some features to not work correctly.");
   }

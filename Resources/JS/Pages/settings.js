@@ -1,7 +1,7 @@
 if (getStorage("Theme") == "Dark") {
-    document.getElementById("theme-button").innerHTML = "&#9790;";
+  document.getElementById("theme-button").innerHTML = "&#9790;";
 } else {
-    document.getElementById("theme-button").innerHTML = "&#9728;";
+  document.getElementById("theme-button").innerHTML = "&#9728;";
 }
 if (getStorage("AutoScroll") == "On") {
   document.getElementById("auto-slideshow").checked = true;
@@ -10,11 +10,11 @@ if (getStorage("AutoScroll") == "On") {
 }
 function themeChange() {
   if (getStorage("Theme") == "Dark") {
-    setStorage("Theme", "Light")
+    setStorage("Theme", "Light");
     document.getElementById("theme-button").innerHTML = "&#9728;";
-    document.getElementById("theme-style").setAttribute("href", "Resources/CSS/Themes/light.css")
+    document.getElementById("theme-style").setAttribute("href", "Resources/CSS/Themes/light.css");
   } else {
-    setStorage("Theme", "Dark")
+    setStorage("Theme", "Dark");
     document.getElementById("theme-button").innerHTML = "&#9790;";
     document.getElementById("theme-style").setAttribute("href", "Resources/CSS/Themes/dark.css");
   }
