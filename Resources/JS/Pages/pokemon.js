@@ -52,8 +52,8 @@ var cutepokemon = [
 ];
 //The uglypokemon array - used to display the correct information on the pokemon page
 var uglypokemon = [
-  ["Jynx", "124", "", "", 2, ["", ""], 2],
-  ["Probopass", "476", "", "", 2, ["", ""], 2],
+  ["Jynx", "124", "The human shape pokémon. Jynx rocks its body in a rhythmic fashion, changing it's tempo to fit how it is feeling. While it speaks a language similar to that of humans, it prefers using dancing to communicate.", "", 2, ["", ""], 2],
+  ["Probopass", "476", "The compass pokémon. It controls 3 mini-noses", "", 2, ["", ""], 2],
   ["Garbodor", "569", "", "", 2, ["", ""], 2],
   ["Conkeldurr", "534", "", "", 3, ["", "", ""], 3],
   ["Barbaracle", "689", "", "", 2, ["", ""], 2],
