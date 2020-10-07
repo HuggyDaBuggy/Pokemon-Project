@@ -37,18 +37,18 @@ var cutepokemon = [
   ["Pikachu", "025", "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt. Females have hearted tails and males have straight cut.", "", 3, ["", "", ""], 2],
   ["Eevee", "133", "The evolution pokémon. Eevee is most well known for the largest amount of possible evolutions. Vaporeon, Flareon, Jolteon, Espeon, Umbreon, Leafeon, Glaceon and finally Sylveon are all the possible evolutions at the time of this writing.", "", 2, ["", ""], 1],
   ["Mew", "151", "The new species pokémon. This mythical creature possesses the genetic information of every Pokémon. It tends to stay hidden, and only a few sightings have been reported.", "", 1, "", 1],
-  ["Togepi", "175", "The spike ball pokémon. It's shell is said to contain happiness and other warm fuzzies. Togepi often shares the feeling with others of pure intent.", "", 3, ["", "", ""], 1],
-  ["Skitty", "300", "The kitten pokémon. Skitty likes to chase it's own tail until it falls dizzy. It's cute, aloof demeanour makes it very popular as a household pet .", "", 2, ["", ""], 1],
+  ["Togepi", "175", "The spike ball pokémon. It's shell is said to contain happiness and other warm fuzzies. If a togepi senses that a person is pure of heart, it will share these feelings with aforementioned person.", "", 3, ["", "", ""], 1],
+  ["Skitty", "300", "The kitten pokémon. Skitty likes to chase it's own tail until it falls dizzy. It's cute, aloof demeanour makes it very popular as both a household pet and a Pokémon Competition participant.", "", 2, ["", ""], 1],
   ["Vulpix", "037", "The fox pokémon. It is able to control a flame in it's mouth that never goes out. It is born with only one tail, but as it gets older it splits and creates more tails.", "", 2, ["", ""], 1],
   ["Emolga", "587", "The sky squirrel pokémon. It glides around with it's cape-like membrane, crackling with electricity as it goes. It often collects berries,  storing them in it's cheeks for later. It will occasionally lose balance when flying if carrying too many berries.", "", 1, "", 1],
   ["Deerling", "585", "The season pokémon. Deerling's coat noticeably changes in sync with the seasons. The colouring can also be affected by temperature, humidity, and other external influences.", "", 2, ["", ""], 1],
   ["Snom", "872", "The worm pokémon. Its diet consists of snow it finds on the ground. As it eats more snow, the spikes on its back grow larger. It also uses a thread to weave a coccoon, disguising itslf as an icicle as it sleeps.", "", 2, ["", ""], 1],
-  ["Teddiursa", "216", "The little bear pokémon. This pokemon often hoards food, most of all honey, in many hidden locations. This is to prepare for the harsh wintertimes, where food is scarce. ", "", 2, ["", ""], 1],
-  ["Jirachi", "385", "The wish pokémon. Jirachi is a mythical pokemon which can be summonned by a specific ritual of song. It is said that if you write a wish and place it on it's head, the wish will come true, but only for the pure of heart ", "", 1, "", 1],
+  ["Teddiursa", "216", "The little bear pokémon. This pokemon often hoards food, most of all honey, in many hidden locations around the forest it resides in. This is to prepare for the harsh wintertimes, where food is scarce. ", "", 2, ["", ""], 1],
+  ["Jirachi", "385", "The wish pokémon. Jirachi is a mythical pokemon which can be summonned by a specific ritual of song. It is said that if you write a wish and place it on it's head, the wish will come true, but only for the pure of heart. ", "", 1, "", 1],
   ["Jigglypuff", "039", "The balloon pokémon. It's voice is said to be magical and Jigglypuff is able to sing it's audience to sleep, as they relax and let the notes flow over them. It is said that nothing can resist it's song.", "", 3, ["", "", ""], 2],
   ["Shaymin", "492", "The gratitude pokémon. Shaymin (in sky forme) fly in flocks, purifying the air and getting rid of all pollutants. It reverts to it's land forme when it touches a Gracidea flower, when it is night time or when it is frozen.", "", 1, "", 1],
   ["Meloetta", "648", "The melody pokémon. The mythical Meloetta's voice can control the emotions of pokémon who happen to hear it's pure voice. Whether or not it can affect humans as well remains to be seen.  ", "", 1, "", 1],
-  ["Absol", "359", "", "", 1, "", 1],
+  ["Absol", "359", "The disaster pokémon. Absol has the ability to sense natural disasters and appears before they strike. People misinterpreted it's presence as a warning, thinking Absol the cause of these disasters. In legend, it is known as a harbinger of doom.", "", 1, "", 1],
 ];
 //The uglypokemon array - used to display the correct information on the pokemon page
 var uglypokemon = [
