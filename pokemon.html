@@ -118,14 +118,17 @@
         </div>
       </div>
     </header>
+    <!-- Pokemon main text (gets filled with js) -->
     <h1 id="pokemon-name"></h1>
     <div class="box-main">
+      <!-- Main pokemon info/stats (gets filled with js) -->
       <div class="box-sub" style="width: 45%; height: 45%; float: left">
         <h3 id="pokemon-stats-title"></h3>
         <p style="text-align: left" id="pokemon-stats"></p>
         <h3 id="pokemon-info-title"></h3>
         <p style="text-align: left" id="pokemon-info"></p>
       </div>
+      <!-- Image slideshow to show pokemon evolutions -->
       <div class="slideshow-container">
         <div class="slides" style="display: none">
           <img class="box-sub" src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-1" />
@@ -141,6 +144,7 @@
         </div>
       </div>
       <br />
+      <!-- Slideshow controls -->
       <div style="text-align: center" class="box-sub" id="pokemon-controls">
         <span style="user-select: none; cursor: pointer" onclick="plusSlides(-1)">&larr;</span>
         <span class="dot" onclick="showslides(1)"></span>
