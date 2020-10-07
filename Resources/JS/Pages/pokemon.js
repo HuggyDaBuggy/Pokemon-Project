@@ -1,3 +1,4 @@
+//Pokemons array - used to check if the url is valid
 var pokemons = [
   "pikachu",
   "eevee",
@@ -30,6 +31,8 @@ var pokemons = [
   "noivern",
   "skuntank",
 ];
+//The cutepokemon array - used to display the correct information on the pokemon page
+//Each pokemon array uses the format ["POKEMON NAME", "POKEMON ID", "POKEMON INFO", "POKEMON STATS", NUMBER OF EVOLUTIONS, ["EVOLUTION 1 NAME", "EVOLUTION 2 NAME", "EVOLUTION 3 NAME"], THE EVOLUTION NUMBER OF THE MAIN POKEMON],
 var cutepokemon = [
   ["Pikachu", "025", "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt. Females have hearted tails and males have straight cut.", "", 3, ["", "", ""], 2],
   ["Eevee", "133", "The evolution pokémon. Eevee is most well known for the largest amount of possible evolutions. Vaporeon, Flareon, Jolteon, Espeon, Umbreon, Leafeon, Glaceon and finally Sylveon are all the possible evolutions at the time of this writing.", "", 2, ["", ""], 1],
@@ -47,6 +50,7 @@ var cutepokemon = [
   ["Meloetta", "648", "", "", 1, "", 1],
   ["Absol", "359", "", "", 1, "", 1],
 ];
+//The uglypokemon array - used to display the correct information on the pokemon page
 var uglypokemon = [
   ["Jynx", "124", "", "", 2, ["", ""], 2],
   ["Probopass", "476", "", "", 2, ["", ""], 2],
@@ -64,12 +68,17 @@ var uglypokemon = [
   ["Noivern", "715", "", "", 2, ["", ""], 2],
   ["Skuntank", "435", "", "", 2, ["", ""], 2],
 ];
+//Gets the pokemon from the url
 var pokemon = window.location.href.split("?")[1].toLowerCase();
+//Resets/Defines variables
 var a = 0;
 var b = 0;
 var c = 0;
+//Checks if url is valid
 if (pokemon.includes(pokemon)) {
+  //Capitalizes the pokemon variable
   var pokemon = capitalize(pokemon);
+  //Sets basic information on the page based on the pokemon
   document.title = "Pokemon - " + pokemon;
   document.getElementById("pokemon-name").innerHTML = pokemon;
   document.getElementById("pokemon-info-title").innerHTML = pokemon + " Info";
@@ -78,18 +87,24 @@ if (pokemon.includes(pokemon)) {
   document.getElementById(pokemon + "-link").style.cursor = "default";
   document.getElementById(pokemon + "-link").style.fontWeight = "bold";
 } else {
+  //If invalid go back in history 1, if no history is available go to home page
   window.history.back();
   window.location.replace("https://huggydabuggy.github.io/Pokemon-Project/");
 }
+//Loops through all pokemon to find which pokemon is specified
 while (a < 15) {
+  //Checks if pokemon is cute
   if (cutepokemon[a][0] == pokemon) {
+    //Sets more page info based on cute
     document.getElementById("related-pokemon").innerHTML = "Other Cute Pokemon";
     document.getElementById("pokemon-info").innerHTML = cutepokemon[a][2];
     document.getElementById("pokemon-stats").innerHTML = cutepokemon[a][3];
     document.getElementById("pokemon-image-1").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/1.png");
     document.getElementById("pokemon-image-1").setAttribute("alt", pokemon);
+    //Sets the correct slide for the slide show
     var slide = cutepokemon[a][6];
     if (cutepokemon[a][4] == 2) {
+      //Sets correct page  info if pokemon has 2 evolutions
       document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
       document.getElementById("pokemon-image-2").setAttribute("alt", cutepokemon[a][5][1]);
       document.getElementById("pokemon-image-text-3").innerHTML = cutepokemon[a][5][1];
@@ -99,6 +114,7 @@ while (a < 15) {
       document.getElementById("pokemon-image-text-1").innerHTML = cutepokemon[a][5][0];
       document.getElementById("pokemon-image-text-2").innerHTML = cutepokemon[a][5][1];
     } else if (cutepokemon[a][4] == 3) {
+      //Sets correct page  info if pokemon has 3 evolutions
       document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
       document.getElementById("pokemon-image-2").setAttribute("alt", cutepokemon[a][5][1]);
       document.getElementById("pokemon-image-text-2").innerHTML = cutepokemon[a][5][1];
@@ -108,10 +124,13 @@ while (a < 15) {
       document.getElementById("pokemon-image-text-2").innerHTML = cutepokemon[a][5][1];
       document.getElementById("pokemon-image-text-3").innerHTML = cutepokemon[a][5][2];
     } else {
+      //Sets correct page  info if pokemon has no evolutions
       document.getElementById("pokemon-controls").style.display = "none";
       document.getElementById("pokemon-image-text-1").innerHTML = cutepokemon[a][5];
     }
+    //Other cute pokemon loop
     while (b < 4) {
+      //Checks if number is too large or negative then corrects it
       if (b < 2) {
         var bb = a - 2 + b;
         if (bb == -1) {
@@ -129,20 +148,25 @@ while (a < 15) {
           bb = 1;
         }
       }
+      //Sets info for other pokemon
       document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("src", "Resources/Images/Pokemon/Cute/" + cutepokemon[bb][0] + "/1.png");
       document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("alt", cutepokemon[bb][0]);
       document.getElementById("related-pokemon-link-" + (b + 1)).setAttribute("href", "pokemon?" + cutepokemon[bb][0]);
       document.getElementById("related-pokemon-" + (b + 1)).innerHTML = cutepokemon[bb][0];
       b++;
     }
+    //Checks if pokemon is ugly
   } else if (uglypokemon[a][0] == pokemon) {
+    //Sets more page info based on ugly
     document.getElementById("related-pokemon").innerHTML = "Other Ugly Pokemon";
     document.getElementById("pokemon-info").innerHTML = uglypokemon[a][2];
     document.getElementById("pokemon-stats").innerHTML = uglypokemon[a][3];
     document.getElementById("pokemon-image-1").setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[a][1] + ".png");
     document.getElementById("pokemon-image-1").setAttribute("alt", pokemon);
+    //Sets the correct slide for the slide show
     var slide = uglypokemon[a][6];
     if (uglypokemon[a][4] == 2) {
+      //Sets correct page  info if pokemon has 2 evolutions
       document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
       document.getElementById("pokemon-image-2").setAttribute("alt", uglypokemon[a][5][1]);
       document.getElementById("pokemon-image-text-3").innerHTML = uglypokemon[a][5][1];
@@ -152,6 +176,7 @@ while (a < 15) {
       document.getElementById("pokemon-image-text-1").innerHTML = uglypokemon[a][5][0];
       document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][5][1];
     } else if (uglypokemon[a][4] == 3) {
+      //Sets correct page  info if pokemon has 3 evolutions
       document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
       document.getElementById("pokemon-image-2").setAttribute("alt", uglypokemon[a][5][1]);
       document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][5][1];
@@ -161,10 +186,13 @@ while (a < 15) {
       document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][5][1];
       document.getElementById("pokemon-image-text-3").innerHTML = uglypokemon[a][5][2];
     } else {
+      //Sets correct page  info if pokemon has no evolutions
       document.getElementById("pokemon-controls").style.display = "none";
       document.getElementById("pokemon-image-text-1").innerHTML = uglypokemon[a][5];
     }
+    //Other ugly pokemon loop
     while (c < 4) {
+      //Checks if number is too large or negative then corrects it
       if (c < 2) {
         var cc = a - 2 + c;
         if (cc == -1) {
@@ -182,6 +210,7 @@ while (a < 15) {
           cc = 1;
         }
       }
+      //Sets info for other pokemon
       document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[cc][0] + "/1.png");
       document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("alt", uglypokemon[cc][0]);
       document.getElementById("related-pokemon-link-" + (c + 1)).setAttribute("href", "pokemon?" + uglypokemon[cc][0]);
@@ -191,32 +220,40 @@ while (a < 15) {
   }
   a++;
 }
+//Shows the slide for the slideshow
 showSlides(slide);
+//Function to increase or decrease the slideshow slide by number
 function plusSlides(s) {
   showSlides((slide += s));
 }
-function currentSlide(s) {
-  showSlides((slide = s));
-}
+//Function to set slideshow slide
 function showSlides(s) {
+  //Sets required variables
   var i;
   var slides = document.getElementsByClassName("slides");
   var dots = document.getElementsByClassName("dot");
+  //Corrects variables if they are too big/small
   if (s > slides.length) {
     slide = 1;
   }
   if (s < 1) {
     slide = slides.length;
   }
+  //Hides inactive slides
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+  //Makes dots inactive
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+  //Shows slides
   slides[slide - 1].style.display = "block";
+  //Actives dot
   dots[slide - 1].className += " active";
+  //Checks if autoscroll is on
   if (getStorage("AutoScroll") == "On") {
+    //If on wait 2s then change slide by 1
     setTimeout(function () {
       showSlides((slide += 1));
     }, 2000);
