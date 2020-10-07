@@ -215,5 +215,8 @@ function showSlides(s) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slide - 1].style.display = "block";
-  dots[slide - 1].className += " active";
+  dots[slide - 1].className += " active"
+  setTimeout(function () {
+    showSlides((slide += 1));
+  }, 2000);
 }
