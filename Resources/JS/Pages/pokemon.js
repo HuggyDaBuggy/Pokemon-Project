@@ -42,7 +42,7 @@ var cutepokemon = [
   ["Vulpix", "037", "The fox pokémon. It is able to control a flame in it's mouth that never goes out. It is born with only one tail, but as it gets older it splits and creates more tails.", "", 2, ["", ""], 1],
   ["Emolga", "587", "The sky squirrel pokémon. It glides around with it's cape-like membrane, crackling with electricity as it goes. It often collects berries,  storing them in it's cheeks for later. It will occasionally lose balance when flying if carrying too many berries.", "", 1, "", 1],
   ["Deerling", "585", "The season pokémon. Deerling's coat noticeably changes in sync with the seasons. The colouring can also be affected by temperature, humidity, and other external influences.", "", 2, ["", ""], 1],
-  ["Snom", "872", "", "", 2, ["The worm pokémon. It's diet consists of snow it finds on the ground. As it eats more snow, the spikes on its back grow larger. It also uses a thread to weave a coccoon, disguising itslf as an icicle as it sleeps.", ""], 1],
+  ["Snom", "872", "The worm pokémon. Its diet consists of snow it finds on the ground. As it eats more snow, the spikes on its back grow larger. It also uses a thread to weave a coccoon, disguising itslf as an icicle as it sleeps."", "", 2, ["", ""], 1],
   ["Teddiursa", "216", "", "", 2, ["", ""], 1],
   ["Jirachi", "385", "", "", 1, "", 1],
   ["Jigglypuff", "039", "", "", 3, ["", "", ""], 2],
