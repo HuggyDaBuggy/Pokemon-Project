@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Main stylesheet link -->
     <link rel="stylesheet" href="Resources/CSS/style.css" />
+    <!-- Theme stylesheet link -->
     <!-- prettier-ignore -->
     <link rel="stylesheet" href="Resources/CSS/Themes/dark.css" id="theme-style" />
+    <!-- Meta data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta data for discord embeds -->
     <meta content="Cute and Ugly Pokemon - Home" property="og:title" />
     <meta content="Pokemon Website highlighting Cute and Ugly Pokemon" property="og:description" />
     <meta content="https://huggydabuggy.github.io/Pokemon-Project/Resources/Images/icon.png" property="og:image" />
     <meta content="#FF8C00" data-react-helmet="true" name="theme-color" />
-    <link rel="icon" type="image/gif/png" href="Resources/Images/icon.png" rel="stylesheet" href="style.css" />
+    <!-- Tab icon -->
+    <link rel="icon" type="image/gif/png" href="Resources/Images/icon.png" />
+    <!-- Import custom font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+    <!-- Page title -->
     <title>Pokemon - Home</title>
   </head>
   <body>
     <div class="box-main" id="context-menu" style="display: none; position: fixed; width: 10%; padding: 0.5%; z-index: 2000">
+      <!-- Custom context menu div -->
       <p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left"><b>Home</b></p>
       <a href="cute"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Cute Pokemon</p></a>
       <a href="cute"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Ugly Pokemon</p></a>
@@ -23,15 +31,20 @@
       <a href="settings"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Site Settings</p></a>
     </div>
     <header class="box-main" style="display: flex">
+      <!-- Header content -->
       <li><img src="Resources/Images/pokemon.png" height="47" /></li>
+      <!-- Header image -->
       <li title="Home page">
+        <!-- Header home button -->
         <p><b>Home</b></p>
       </li>
       <div class="dropdown">
+        <!-- Header cute -->
         <li title="The cutest pokemon">
           <a href="cute"><p>Cute</p></a>
         </li>
         <div class="box-main" id="dropdown-content">
+          <!-- Cute dropdown -->
           <a href="pokemon?Pikachu" title="Pikachu"><p>Pikachu</p></a>
           <a href="pokemon?Eevee" title="Eevee"><p>Eevee</p></a>
           <a href="pokemon?Mew" title="Mew"><p>Mew</p></a>
@@ -50,10 +63,12 @@
         </div>
       </div>
       <div class="dropdown">
+        <!-- Header ugly -->
         <li title="The ugliest pokemon">
           <a href="ugly"><p>Ugly</p></a>
         </li>
         <div class="box-main" id="dropdown-content">
+          <!-- Ugly dropdown -->
           <a href="pokemon?Jynx" title="Jynx"><p>Jynx</p></a>
           <a href="pokemon?Probopass" title="Probopass"><p>Probopass</p></a>
           <a href="pokemon?Garbodor" title="Garbodor"><p>Garbodor</p></a>
@@ -74,8 +89,10 @@
       <div class="dropdown">
         <li title="Vote on polls">
           <a href="polls"><p>Polls</p></a>
+          <!-- Header polls -->
         </li>
         <div class="box-main" id="dropdown-content">
+          <!-- Polls Dropdown -->
           <a href="polls#"><p>Poll</p></a>
         </div>
       </div>
