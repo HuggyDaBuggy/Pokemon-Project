@@ -149,7 +149,7 @@ while (a < 15) {
         }
       }
       //Sets info for other pokemon
-      document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("src", "Resources/Images/Pokemon/Cute/" + cutepokemon[bb][0] + "/1.png");
+      document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("src", "Resources/Images/Pokemon/Cute/" + cutepokemon[bb][0] + "/" + cutepokemon[bb][6] + ".png");
       document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("alt", cutepokemon[bb][0]);
       document.getElementById("related-pokemon-link-" + (b + 1)).setAttribute("href", "pokemon?" + cutepokemon[bb][0]);
       document.getElementById("related-pokemon-" + (b + 1)).innerHTML = cutepokemon[bb][0];
@@ -161,13 +161,13 @@ while (a < 15) {
     document.getElementById("related-pokemon").innerHTML = "Other Ugly Pokemon";
     document.getElementById("pokemon-info").innerHTML = uglypokemon[a][2];
     document.getElementById("pokemon-stats").innerHTML = uglypokemon[a][3];
-    document.getElementById("pokemon-image-1").setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[a][1] + ".png");
+    document.getElementById("pokemon-image-1").setAttribute("src", "Resources/Images/Pokemon/Ugly/" + pokemon + "/1.png");
     document.getElementById("pokemon-image-1").setAttribute("alt", pokemon);
     //Sets the correct slide for the slide show
     var slide = uglypokemon[a][6];
     if (uglypokemon[a][4] == 2) {
       //Sets correct page  info if pokemon has 2 evolutions
-      document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
+      document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Ugly/" + pokemon + "/2.png");
       document.getElementById("pokemon-image-2").setAttribute("alt", uglypokemon[a][5][1]);
       document.getElementById("pokemon-image-text-3").innerHTML = uglypokemon[a][5][1];
       document.getElementById("image-dots-3").style.display = "none";
@@ -177,10 +177,10 @@ while (a < 15) {
       document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][5][1];
     } else if (uglypokemon[a][4] == 3) {
       //Sets correct page  info if pokemon has 3 evolutions
-      document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
+      document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Ugly/" + pokemon + "/2.png");
       document.getElementById("pokemon-image-2").setAttribute("alt", uglypokemon[a][5][1]);
       document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][5][1];
-      document.getElementById("pokemon-image-3").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/3.png");
+      document.getElementById("pokemon-image-3").setAttribute("src", "Resources/Images/Pokemon/Ugly/" + pokemon + "/3.png");
       document.getElementById("pokemon-image-3").setAttribute("alt", uglypokemon[a][5][2]);
       document.getElementById("pokemon-image-text-1").innerHTML = uglypokemon[a][5][0];
       document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][5][1];
@@ -211,7 +211,7 @@ while (a < 15) {
         }
       }
       //Sets info for other pokemon
-      document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[cc][0] + "/1.png");
+      document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[cc][0] + "/" + uglypokemon[cc][6] + ".png");
       document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("alt", uglypokemon[cc][0]);
       document.getElementById("related-pokemon-link-" + (c + 1)).setAttribute("href", "pokemon?" + uglypokemon[cc][0]);
       document.getElementById("related-pokemon-" + (c + 1)).innerHTML = uglypokemon[cc][0];
