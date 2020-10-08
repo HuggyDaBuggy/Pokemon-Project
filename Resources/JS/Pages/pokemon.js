@@ -62,11 +62,11 @@ var uglypokemon = [
   ["Purugly", "432", "The tiger cat pokémon. Purugly is a brazen brute that barges its way into another Pokémon’s nest and claims it as its own. It binds its body with its tails to make itself look bigger. If it locks eyes, it will glare ceaselessly.", "", 2, ["", ""], 2],
   ["Muk", "089", "The sludge pokémon. It smells so awful, it can cause fainting. It has lost its sense of smell through degeneration. After recent environmental improvements, this Pokémon is now hardly seen at all. People speculate that it may go extinct at some point.", "", 2, ["", ""], 2],
   ["Drowzee", "096", "The hypnosis pokémon. If you think that you had a good dream, but you can’t remember it, a Drowzee has probably eaten it. If your nose becomes itchy while you are sleeping, it’s a sure sign that one of these Pokémon is standing above your pillow and trying to eat your dream through your nostrils.", "", 2, ["", ""], 1],
-  ["Swampert", "260", "", "", 3, ["", "", ""], 3],
-  ["Walrein", "365", "", "", 3, ["", "", ""], 3],
-  ["Malamar", "687", "", "", 2, ["", ""], 2],
-  ["Noivern", "715", "", "", 2, ["", ""], 2],
-  ["Skuntank", "435", "", "", 2, ["", ""], 2],
+  ["Swampert", "260", "The mud fish pokémon. Swampert predicts storms by sensing subtle differences in the sounds of waves and tidal winds with its fins. If a storm is approaching, it piles up boulders to protect itself. It bashes down foes with a swing of its thick arms.", "", 3, ["", "", ""], 3],
+  ["Walrein", "365", "The ice break pokémon. It shatters ice with its big tusks. Its thick blubber repels both the cold and enemy attacks. To protect its herd, the leader battles anything that invades its territory, even at the cost of its life.", "", 3, ["", "", ""], 3],
+  ["Malamar", "687", "The overturning pokémon. Gazing at its luminescent spots will quickly induce a hypnotic state, putting the observer under Malamar’s control. It lures its prey close with hypnotic motions, then wraps its tentacles around it before finishing it off with digestive fluids.", "", 2, ["", ""], 2],
+  ["Noivern", "715", "The sound wave pokémon. The ultrasonic waves it emits from its ears can reduce a large boulder to pebbles.  Aggressive and cruel, this Pokémon will ruthlessly torment enemies that are helpless in the dark.", "", 2, ["", ""], 2],
+  ["Skuntank", "435", "The skunk pokémon. In its belly, it reserves stinky fluid that it shoots from its tail during battle. As this Pokémon’s diet varies, so does the stench of its fluid. The range of this attack comes to almost over 160 feet.", "", 2, ["", ""], 2],
 ];
 //Gets the pokemon from the url
 var pokemon = window.location.href.split("?")[1].toLowerCase();
