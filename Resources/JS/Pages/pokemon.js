@@ -93,7 +93,13 @@ var uglypokemon = [
   ["Skuntank", "435", "The skunk pokémon. In its belly, it reserves stinky fluid that it shoots from its tail during battle. As this Pokémon’s diet varies, so does the stench of its fluid. The range of this attack comes to almost over 160 feet.", "", 2, ["", ""], 2],
 ];
 //Gets the pokemon from the url
-var pokemon = window.location.href.split("?")[1].toLowerCase();
+if (window.location.href.split("?")[1] != null) {
+  var pokemon = window.location.href.split("?")[1].toLowerCase();
+} else {
+  //If invalid go back in history 1, if no history is available go to home page
+  window.history.back();
+  window.location.replace("https://huggydabuggy.github.io/Pokemon-Project/");
+}
 //Resets/Defines variables
 var a = 0;
 var b = 0;
