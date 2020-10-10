@@ -93,8 +93,8 @@ var uglypokemon = [
   ["Skuntank", "The skunk pokémon. In its belly, it reserves stinky fluid that it shoots from its tail during battle. As this Pokémon’s diet varies, so does the stench of its fluid. The range of this attack comes to almost over 160 feet.", "", 2, ["", ""], 2, false],
 ];
 //Gets the pokemon from the url
-if (window.location.href.split("?")[1] != null) {
-  var pokemon = window.location.href.split("?")[1].toLowerCase();
+if (window.location.href.split("?Pokemon=")[1] != null) {
+  var pokemon = window.location.href.split("?Pokemon=")[1].toLowerCase();
 } else {
   //If invalid go back in history 1, if no history is available go to home page
   window.history.back();
@@ -185,7 +185,7 @@ while (a < 15) {
       //Sets info for other pokemon
       document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("src", "Resources/Images/Pokemon/Cute/" + cutepokemon[bb][0] + "/" + cutepokemon[bb][5] + ".png");
       document.getElementById("related-pokemon-image-" + (b + 1)).setAttribute("alt", cutepokemon[bb][0]);
-      document.getElementById("related-pokemon-link-" + (b + 1)).setAttribute("href", "pokemon?" + cutepokemon[bb][0]);
+      document.getElementById("related-pokemon-link-" + (b + 1)).setAttribute("href", "pokemon?Pokemon=" + cutepokemon[bb][0]);
       document.getElementById("related-pokemon-" + (b + 1)).innerHTML = cutepokemon[bb][0];
       b++;
     }
@@ -251,7 +251,7 @@ while (a < 15) {
       //Sets info for other pokemon
       document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("src", "Resources/Images/Pokemon/Ugly/" + uglypokemon[cc][0] + "/" + uglypokemon[cc][5] + ".png");
       document.getElementById("related-pokemon-image-" + (c + 1)).setAttribute("alt", uglypokemon[cc][0]);
-      document.getElementById("related-pokemon-link-" + (c + 1)).setAttribute("href", "pokemon?" + uglypokemon[cc][0]);
+      document.getElementById("related-pokemon-link-" + (c + 1)).setAttribute("href", "pokemon?Pokemon=" + uglypokemon[cc][0]);
       document.getElementById("related-pokemon-" + (c + 1)).innerHTML = uglypokemon[cc][0];
       c++;
     }
