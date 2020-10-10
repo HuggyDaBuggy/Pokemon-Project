@@ -55,15 +55,7 @@ var uglypokemon = [
   ["Jynx", "The human shape pokémon. Jynx rocks its body in a rhythmic fashion, changing it's tempo to fit how it is feeling. While it speaks a language similar to that of humans, it prefers using dancing to communicate.", "", 2, ["", ""], 2, false],
   ["Probopass", "The compass pokémon. It controls 3 mini-noses, small replicas of itself which float around it, using magnetic force. They maneuver to catch prey and battle orders. The main body is thought of as the control center.", "", 2, ["", ""], 2, false],
   ["Garbodor", "The trash heap pokémon. Garbodor's body creates many kinds of toxic substances and poisons inside it. It's left arm is surprisingly strong and finishes off enemies with a shot of putrid, virulent gas that can kill a weak pokémon with ease.", "", 2, ["", ""], 2, false],
-  [
-    "Conkeldurr",
-    "The muscular pokémon. It is said that Conkeldurr taught humans how to make concrete over 2000 years ago. Their knowledge of concrete allowes them to use the slabs they carry in their hands to be used freely in a variety of moves whilst in battle.",
-    "",
-    3,
-    ["", "", ""],
-    3,
-    false,
-  ],
+  ["Conkeldurr", "The muscular pokémon. It is said that Conkeldurr taught humans how to make concrete over 2000 years ago. Their knowledge of concrete allowes them to use the slabs they carry in their hands to be used freely in a variety of moves whilst in battle.", "", 3, ["", "", ""], 3, false],
   [
     "Barbaracle",
     "The collective pokémon. When they evolve, two Binacle multiply into seven. They fight with the power of seven Binacle. The Binacle that serves as the head gives orders to those serving as the limbs. However Barbaracle’s legs and hands have minds of their own, and they are able move independently.",
@@ -86,15 +78,7 @@ var uglypokemon = [
     1,
     false,
   ],
-  [
-    "Swampert",
-    "The mud fish pokémon. Swampert predicts storms by sensing subtle differences in the sounds of waves and tidal winds with its fins. If a storm is approaching, it piles up boulders to protect itself. It bashes down foes with a swing of its thick arms.",
-    "",
-    3,
-    ["", "", ""],
-    3,
-    false,
-  ],
+  ["Swampert", "The mud fish pokémon. Swampert predicts storms by sensing subtle differences in the sounds of waves and tidal winds with its fins. If a storm is approaching, it piles up boulders to protect itself. It bashes down foes with a swing of its thick arms.", "", 3, ["", "", ""], 3, false],
   ["Walrein", "The ice break pokémon. It shatters ice with its big tusks. Its thick blubber repels both the cold and enemy attacks. To protect its herd, the leader battles anything that invades its territory, even at the cost of its life.", "", 3, ["", "", ""], 3, false],
   [
     "Malamar",
@@ -149,10 +133,10 @@ while (a < 15) {
     document.getElementById("pokemon-image-1").setAttribute("alt", pokemon);
     //Hides th vot eon poll button if the pokemon is not currently in a poll
     if (!cutepokemon[a][6]) {
-      document.getElementById("vote-poll").style.display = "none"
+      document.getElementById("vote-poll").style.display = "none";
     }
-      //Sets the correct slide for the slide show
-      var slide = cutepokemon[a][5];
+    //Sets the correct slide for the slide show
+    var slide = cutepokemon[a][5];
     if (cutepokemon[a][3] == 2) {
       //Sets correct page  info if pokemon has 2 evolutions
       document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
