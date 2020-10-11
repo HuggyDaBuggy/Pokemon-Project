@@ -11,9 +11,12 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
-header {
+header, footer {
   display: flex;
   align-content: space-around;
+}
+footer {
+  font-size: 60%;
 }
 /*Box Main and Box Sub Formatting (most of the elements for the website)*/
 .box-main {

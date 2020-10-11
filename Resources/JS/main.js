@@ -34,7 +34,7 @@ window.onscroll = function () {
 if (getStorage("Theme") == null) {
   if (typeof Storage !== "undefined") {
     setStorage("Theme", "Dark");
-    setStorage("ImageScroll", "Off");
+    setStorage("ImageScroll", false);
   } else {
     alert("Your browser does not support local storage, this will cause some features to not work correctly.");
   }

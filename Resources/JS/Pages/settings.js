@@ -5,11 +5,8 @@ if (getStorage("Theme") == "Dark") {
   document.getElementById("theme-button").innerHTML = "&#9728;";
 }
 //Sets the autoscroll checkbox correctly
-if (getStorage("AutoScroll") == "On") {
-  document.getElementById("auto-slideshow").checked = true;
-} else {
-  document.getElementById("auto-slideshow").checked = false;
-}
+alert(getStorage("AutoScroll"));
+document.getElementById("auto-slideshow").checked = getStorage("AutoScroll");
 //CHanges the theme when theme button is clicked
 function themeChange() {
   if (getStorage("Theme") == "Dark") {
@@ -24,10 +21,11 @@ function themeChange() {
 }
 //Changes the auto slideshow setting when checkbox changes
 function slideshowChange() {
-  var checkbox = document.getElementById("auto-slideshow");
-  if (checkbox.checked) {
-    setStorage("AutoScroll", "On");
+  if (document.getElementById("auto-slideshow").checked) {
+    setStorage("AutoScroll", true);
+    alert(getStorage("AutoScroll"));
   } else {
-    setStorage("AutoScroll", "Off");
+    setStorage("AutoScroll", false);
+    alert(getStorage("AutoScroll"));
   }
 }
