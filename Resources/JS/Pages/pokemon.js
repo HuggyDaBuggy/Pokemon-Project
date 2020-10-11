@@ -94,7 +94,7 @@ var cutepokemon = [
   [
     "Jirachi",
     "The wish pokémon. Jirachi is a mythical pokemon which can be summoned by a specific ritual of song. It is said that if you write a wish and place it on it's head, the wish will come true, but only for the pure of heart. ",
-    "Id: <i>#385</i><br />Rating: <i>83 / 100</i><br />Type: <i>Steel and Physic</i><br />Number Of Evolutions: <i>1</i><br />Weakness: <i>Ghost, Fire, Dark and Ground</i><br />Category: <i>Wish</i>",
+    "Id: <i>#385</i><br />Rating: <i>83 / 100</i><br />Type: <i>Steel and Psychic</i><br />Number Of Evolutions: <i>1</i><br />Weakness: <i>Ghost, Fire, Dark and Ground</i><br />Category: <i>Wish</i>",
     1,
     "Jirachi #385",
     1,
@@ -121,7 +121,7 @@ var cutepokemon = [
   [
     "Meloetta",
     "The melody pokémon. The mythical Meloetta's voice can control the emotions of pokémon who happen to hear it's pure voice. Whether or not it can affect humans as well remains to be seen.  ",
-    "Id: <i>#649</i><br />Rating: <i>78 / 100</i><br />Type: <i>Normal and Physic</i><br />Number Of Evolutions: <i>1</i><br />Weakness: <i>Dark and Bug</i><br />Category: <i>Melody</i>",
+    "Id: <i>#649</i><br />Rating: <i>78 / 100</i><br />Type: <i>Normal and Psychic</i><br />Number Of Evolutions: <i>1</i><br />Weakness: <i>Dark and Bug</i><br />Category: <i>Melody</i>",
     1,
     "Moloetta #648",
     1,
@@ -142,7 +142,7 @@ var uglypokemon = [
   [
     "Jynx",
     "The human shape pokémon. Jynx rocks its body in a rhythmic fashion, changing it's tempo to fit how it is feeling. While it speaks a language similar to that of humans, it prefers using dancing to communicate.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#124</i><br />Rating: <i>08 / 100</i><br />Type: <i>Ice and Psychic</i><br />Number Of Evolutions: <i>1</i><br />Weakness: <i>Steel, Ghost, Fire, Dark, Rock and Bug</i><br />Category: <i>Human Shape</i>",
     2,
     ["Smoochum #238", "Jynx #124"],
     2,
@@ -151,7 +151,7 @@ var uglypokemon = [
   [
     "Probopass",
     "The compass pokémon. It controls 3 mini-noses, small replicas of itself which float around it, using magnetic force. They maneuver to catch prey and battle orders. The main body is thought of as the control center.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#476</i><br />Rating: <i>19 / 100</i><br />Type: <i>Rock and Steel</i><br />Number Of Evolutions: <i>2</i><br />Weakness: <i>Water, Fighting and Ground</i><br />Category: <i>Compass</i>",
     2,
     ["Nosepass #299", "Probopass #476"],
     2,
@@ -160,7 +160,7 @@ var uglypokemon = [
   [
     "Garbodor",
     "The trash heap pokémon. Garbodor's body creates many kinds of toxic substances and poisons inside it. It's left arm is surprisingly strong and finishes off enemies with a shot of putrid, virulent gas that can kill a weak pokémon with ease.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#569</i><br />Rating: <i>24 / 100</i><br />Type: <i>Poison</i><br />Number Of Evolutions: <i>2</i><br />Weakness: <i>Psychic and Ground</i><br />Category: <i>Trash Heap</i>",
     2,
     ["Trubbish #568", "Garbodor #569"],
     2,
@@ -169,7 +169,7 @@ var uglypokemon = [
   [
     "Conkeldurr",
     "The muscular pokémon. It is said that Conkeldurr taught humans how to make concrete over 2000 years ago. Their knowledge of concrete allows them to use the slabs they carry in their hands to be used freely in a variety of moves whilst in battle.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#534</i><br />Rating: <i>12 / 100</i><br />Type: <i>Fighting</i><br />Number Of Evolutions: <i>3</i><br />Weakness: <i>Psychic, Flying and Fairy</i><br />Category: <i>Muscular</i>",
     3,
     ["Timburr #532", "Gurdurr #533", "Conkeldurr #534"],
     3,
@@ -178,7 +178,7 @@ var uglypokemon = [
   [
     "Barbaracle",
     "The collective pokémon. When they evolve, two Binacle multiply into seven. They fight with the power of seven Binacle. The Binacle that serves as the head gives orders to those serving as the limbs. However Barbaracle’s legs and hands have minds of their own, and they are able move independently.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#689</i><br />Rating: <i>16 / 100</i><br />Type: <i>Rock and Water</i><br />Number Of Evolutions: <i>2</i><br />Weakness: <i>Grass, Electric, Fighting and Ground</i><br />Category: <i>Collective</i>",
     2,
     ["Binacle #688", "Barbaracle #689"],
     2,
@@ -187,7 +187,7 @@ var uglypokemon = [
   [
     "Stunfisk",
     "The trap pokémon. It conceals itself in the mud of the seashore. Then it waits. When prey touch it, it delivers a jolt of electricity. Its skin is very hard, so it is unhurt even if stepped on by sumo wrestlers. It smiles when it transmits the shock.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#618</i><br />Rating: <i>36 / 100</i><br />Type: <i>Ground and Electric</i><br />Number Of Evolutions: <i>1</i><br />Weakness: <i>Water, Grass, Ice and Ground</i><br />Category: <i>Trap</i>",
     1,
     "Stunfisk #618",
     1,
@@ -196,7 +196,7 @@ var uglypokemon = [
   [
     "Seismitoad",
     "The vibration pokémon. They shoot paralyzing liquid from their head bumps. They use vibration to hurt their opponents. By putting power into its bumps, it creates vibrations and increases the power of its punches.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#537</i><br />Rating: <i>18 / 100</i><br />Type: <i>Water and Ground</i><br />Number Of Evolutions: <i>3</i><br />Weakness: <i>Grass</i><br />Category: <i>Vibration</i>",
     3,
     ["Tympole #535", "Palpitoad #536", "Seismitoad #537"],
     3,
@@ -205,7 +205,7 @@ var uglypokemon = [
   [
     "Purugly",
     "The tiger cat pokémon. Purugly is a brazen brute that barges its way into another Pokémon’s nest and claims it as its own. It binds its body with its tails to make itself look bigger. If it locks eyes, it will glare ceaselessly.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#432</i><br />Rating: <i>28 / 100</i><br />Type: <i>Normal</i><br />Number Of Evolutions: <i>2</i><br />Weakness: <i>Fighting</i><br />Category: <i>Tiger Cat</i>",
     2,
     ["Glameow #431", "Purugly #432"],
     2,
@@ -214,7 +214,7 @@ var uglypokemon = [
   [
     "Muk",
     "The sludge pokémon. It smells so awful, it can cause fainting. It has lost its sense of smell through degeneration. After recent environmental improvements, this Pokémon is now hardly seen at all. People speculate that it may go extinct at some point.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#089</i><br />Rating: <i>22 / 100</i><br />Type: <i>Poison</i><br />Number Of Evolutions: <i>2</i><br />Weakness: <i>Psychic and Ground</i><br />Category: <i>Sludge</i>",
     2,
     ["Grimer #088", "Muk #089"],
     2,
@@ -223,7 +223,7 @@ var uglypokemon = [
   [
     "Drowzee",
     "The hypnosis pokémon. If you think that you had a good dream, but you can’t remember it, a Drowzee has probably eaten it. If your nose becomes itchy while you are sleeping, it’s a sure sign that one of these Pokémon is standing above your pillow and trying to eat your dream through your nostrils.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#096</i><br />Rating: <i>26 / 100</i><br />Type: <i>Phsyic</i><br />Number Of Evolutions: <i>2</i><br />Weakness: <i>Ghost, Dark and Bug</i><br />Category: <i>Hypnosis</i>",
     2,
     ["Drowzee #096", "Hypno #097"],
     1,
@@ -232,7 +232,7 @@ var uglypokemon = [
   [
     "Swampert",
     "The mud fish pokémon. Swampert predicts storms by sensing subtle differences in the sounds of waves and tidal winds with its fins. If a storm is approaching, it piles up boulders to protect itself. It bashes down foes with a swing of its thick arms.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#260</i><br />Rating: <i>41 / 100</i><br />Type: <i>Water and Ground</i><br />Number Of Evolutions: <i>3</i><br />Weakness: <i>Grass</i><br />Category: <i>Mud Fish</i>",
     3,
     ["Mudkip #258", "Marshtomp #259", "Marshtomp #259"],
     3,
@@ -241,7 +241,7 @@ var uglypokemon = [
   [
     "Walrein",
     "The ice break pokémon. It shatters ice with its big tusks. Its thick blubber repels both the cold and enemy attacks. To protect its herd, the leader battles anything that invades its territory, even at the cost of its life.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#365</i><br />Rating: <i>39 / 100</i><br />Type: <i>Ice and Water</i><br />Number Of Evolutions: <i>3</i><br />Weakness: <i>Grass, Electric, Fighting and Rock</i><br />Category: <i>Ice Break</i>",
     3,
     ["Spheal #363", "Sealeo #364", "Walrein #365"],
     3,
@@ -250,7 +250,7 @@ var uglypokemon = [
   [
     "Malamar",
     "The overturning pokémon. Gazing at its luminescent spots will quickly induce a hypnotic state, putting the observer under Malamar’s control. It lures its prey close with hypnotic motions, then wraps its tentacles around it before finishing it off with digestive fluids.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#687</i><br />Rating: <i>46 / 100</i><br />Type: <i>Dark Psychic</i><br />Number Of Evolutions: <i>2</i><br />Weakness: <i>Fairy and Bug</i><br />Category: <i>Overturning</i>",
     2,
     ["Inkay #686", "Malamar #687"],
     2,
@@ -259,7 +259,7 @@ var uglypokemon = [
   [
     "Noivern",
     "The sound wave pokémon. The ultrasonic waves it emits from its ears can reduce a large boulder to pebbles.  Aggressive and cruel, this Pokémon will ruthlessly torment enemies that are helpless in the dark.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#715</i><br />Rating: <i>57 / 100</i><br />Type: <i>Flying and Dragon</i><br />Number Of Evolutions: <i>2</i><br />Weakness: <i>Fariry, Rock, Ice and Dragon</i><br />Category: <i>Sound Wave</i>",
     2,
     ["Noibat #714", "Noivern #715"],
     2,
@@ -268,7 +268,7 @@ var uglypokemon = [
   [
     "Skuntank",
     "The skunk pokémon. In its belly, it reserves stinky fluid that it shoots from its tail during battle. As this Pokémon’s diet varies, so does the stench of its fluid. The range of this attack comes to almost over 160 feet.",
-    "Id: <i>#</i><br />Rating: <i> / 100</i><br />Type: <i></i><br />Number Of Evolutions: <i></i><br />Weakness: <i></i><br />Category: <i></i>",
+    "Id: <i>#435</i><br />Rating: <i>32 / 100</i><br />Type: <i>Pioison and Dark</i><br />Number Of Evolutions: <i>2</i><br />Weakness: <i>Ground</i><br />Category: <i>Skunk</i>",
     2,
     ["Stunky #434", "Skuntank #435"],
     2,
