@@ -14,27 +14,34 @@ function capitalize(input) {
   return input[0].toUpperCase() + input.slice(1);
 }
 //Disable Default Context Menu
-document.addEventListener(
-  "contextmenu",
-  function (rclick) {
-    rclick.preventDefault();
-  },
-  false
-);
+if (getStorage("ContextToggle") == "Enabled") {
+  document.addEventListener(
+    "contextmenu",
+    function (rclick) {
+      rclick.preventDefault();
+    },
+    false
+  );
+}
 //Context Menu Function
 document.addEventListener("contextmenu", contextMenu);
 //Hide Context Menu when certain events happen
 window.onclick = function () {
-  document.getElementById("context-menu").style.display = "none";
+  if (getStorage("ContextToggle") == "Enabled") {
+    document.getElementById("context-menu").style.display = "none";
+  }
 };
 window.onscroll = function () {
-  document.getElementById("context-menu").style.display = "none";
+  if (getStorage("ContextToggle") == "Enabled") {
+    document.getElementById("context-menu").style.display = "none";
+  }
 };
 //Checks if it is the users first time on the site, then sets settings to defaults
 if (getStorage("Theme") == null) {
   if (typeof Storage !== "undefined") {
     setStorage("Theme", "Dark");
     setStorage("ImageScroll", "Disabled");
+    setStorage("ContextToggle", "Enabled");
   } else {
     alert("Your browser does not support local storage, this will cause some features to not work correctly.");
   }
@@ -47,7 +54,9 @@ if (getStorage("Theme") == "Light") {
 }
 //Shows the custom context menu on rclick - combined with line 25
 function contextMenu(event) {
-  document.getElementById("context-menu").style.left = event.clientX - 17 + "px";
-  document.getElementById("context-menu").style.top = event.clientY - 17 + "px";
-  document.getElementById("context-menu").style.display = "block";
+  if (getStorage("ContextToggle") == "Enabled") {
+    document.getElementById("context-menu").style.left = event.clientX - 17 + "px";
+    document.getElementById("context-menu").style.top = event.clientY - 17 + "px";
+    document.getElementById("context-menu").style.display = "block";
+  }
 }
