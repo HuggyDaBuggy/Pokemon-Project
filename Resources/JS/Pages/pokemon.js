@@ -1,36 +1,3 @@
-//Pokemons array - used to check if the url is valid
-var pokemons = [
-  "pikachu",
-  "eevee",
-  "mew",
-  "togepi",
-  "skitty",
-  "vulpix",
-  "emolga",
-  "deerling",
-  "snom",
-  "teddiursa",
-  "jirachi",
-  "jigglypuff",
-  "shaymin",
-  "meloetta",
-  "absol",
-  "jynx",
-  "probopass",
-  "garbodor",
-  "conkeldurr",
-  "barbaracle",
-  "stunfisk",
-  "seismitoad",
-  "purugly",
-  "muk",
-  "drowzee",
-  "swampert",
-  "walrein",
-  "malamar",
-  "noivern",
-  "skuntank",
-];
 //The cutepokemon array - used to display the correct information on the pokemon page
 //Each pokemon array uses the format ["POKEMON NAME", "POKEMON ID", "POKEMON INFO", "POKEMON STATS", NUMBER OF EVOLUTIONS, ["EVOLUTION 1 NAME", "EVOLUTION 2 NAME", "EVOLUTION 3 NAME"], THE EVOLUTION NUMBER OF THE MAIN POKEMON],
 var cutepokemon = [
@@ -94,37 +61,22 @@ var uglypokemon = [
 ];
 //Gets the pokemon from the url
 if (window.location.href.split("?Pokemon=")[1] != null) {
-  var pokemon = window.location.href.split("?Pokemon=")[1].toLowerCase();
+  var pokemon = capitalize(window.location.href.split("?Pokemon=")[1].toLowerCase());
 } else {
   //If invalid go back in history 1, if no history is available go to home page
   window.history.back();
   window.location.replace("https://huggydabuggy.github.io/Pokemon-Project/");
 }
 //Resets/Defines variables
+var valid = false;
 var a = 0;
 var b = 0;
 var c = 0;
-//Checks if url is valid
-if (pokemon.includes(pokemon)) {
-  //Capitalizes the pokemon variable
-  var pokemon = capitalize(pokemon);
-  //Sets basic information on the page based on the pokemon
-  document.title = "Pokemon - " + pokemon;
-  document.getElementById("pokemon-name").innerHTML = pokemon;
-  document.getElementById("pokemon-info-title").innerHTML = pokemon + " Info";
-  document.getElementById("pokemon-stats-title").innerHTML = pokemon + " Stats";
-  document.getElementById(pokemon + "-link").setAttribute("href", "javascript: void(0)");
-  document.getElementById(pokemon + "-link").style.cursor = "default";
-  document.getElementById(pokemon + "-link").style.fontWeight = "bold";
-} else {
-  //If invalid go back in history 1, if no history is available go to home page
-  window.history.back();
-  window.location.replace("https://huggydabuggy.github.io/Pokemon-Project/");
-}
 //Loops through all pokemon to find which pokemon is specified
 while (a < 15) {
   //Checks if pokemon is cute
   if (cutepokemon[a][0] == pokemon) {
+    var valid = true;
     //Sets more page info based on cute
     document.getElementById("related-pokemon").innerHTML = "Other Cute Pokemon";
     document.getElementById("pokemon-info").innerHTML = cutepokemon[a][1];
@@ -191,6 +143,7 @@ while (a < 15) {
     }
     //Checks if pokemon is ugly
   } else if (uglypokemon[a][0] == pokemon) {
+    var valid = true;
     //Sets more page info based on ugly
     document.getElementById("related-pokemon").innerHTML = "Other Ugly Pokemon";
     document.getElementById("pokemon-info").innerHTML = uglypokemon[a][1];
@@ -257,6 +210,20 @@ while (a < 15) {
     }
   }
   a++;
+}
+//Checks if the pokemon was valid
+if (!valid) {
+  //If invalid go back in history 1, if no history is available go to home page
+  window.history.back();
+  window.location.replace("https://huggydabuggy.github.io/Pokemon-Project/");
+} else {
+  document.title = "Pokemon - " + pokemon;
+  document.getElementById("pokemon-name").innerHTML = pokemon;
+  document.getElementById("pokemon-info-title").innerHTML = pokemon + " Info";
+  document.getElementById("pokemon-stats-title").innerHTML = pokemon + " Stats";
+  document.getElementById(pokemon + "-link").setAttribute("href", "javascript: void(0)");
+  document.getElementById(pokemon + "-link").style.cursor = "default";
+  document.getElementById(pokemon + "-link").style.fontWeight = "bold";
 }
 //Shows the slide for the slideshow
 showSlides(slide);
