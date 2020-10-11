@@ -1,7 +1,7 @@
 //Each pokemon array uses the format ["POKEMON NAME", "POKEMON INFO", "POKEMON STATS", NUMBER OF EVOLUTIONS, ["EVOLUTION 1 NAME", "EVOLUTION 2 NAME", "EVOLUTION 3 NAME"], THE EVOLUTION NUMBER OF THE MAIN POKEMON]
 //The cutepokemon array - used to display the correct information on the pokemon page
 var cutepokemon = [
-  ["Pikachu", "The electic mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt. Females have hearted tails and males have straight cut.", "", 3, ["Pichu #172", "Pikachu #025", "Raichu #026"], 2, true],
+  ["Pikachu", "The electric mouse pokémon. It stores electricity in it's cheeks and attacks with energy equivalent to a lighting bolt. Females have hearted tails and males have straight cut.", "", 3, ["Pichu #172", "Pikachu #025", "Raichu #026"], 2, true],
   [
     "Eevee",
     "The evolution pokémon. Eevee is most well known for the largest amount of possible evolutions. Vaporeon, Flareon, Jolteon, Espeon, Umbreon, Leafeon, Glaceon and finally Sylveon are all the possible evolutions at the time of this writing.",
@@ -25,9 +25,9 @@ var cutepokemon = [
     false,
   ],
   ["Deerling", "The season pokémon. Deerling's coat noticeably changes in sync with the seasons. The colouring can also be affected by temperature, humidity, and other external influences.", "", 2, ["Deerling #585", "Sawsbuck #586"], 1, false],
-  ["Snom", "The worm pokémon. Its diet consists of snow it finds on the ground. As it eats more snow, the spikes on its back grow larger. It also uses a thread to weave a cocoon, disguising itslf as an icicle as it sleeps.", "", 2, ["Snom #872", "Frosmoth #873"], 1, true],
+  ["Snom", "The worm pokémon. Its diet consists of snow it finds on the ground. As it eats more snow, the spikes on its back grow larger. It also uses a thread to weave a cocoon, disguising its self as an icicle as it sleeps.", "", 2, ["Snom #872", "Frosmoth #873"], 1, true],
   ["Teddiursa", "The little bear pokémon. This pokemon often hoards food, most of all honey, in many hidden locations around the forest it resides in. This is to prepare for the harsh wintertimes, where food is scarce. ", "", 2, ["Teddiursa #216", "Ursaring #217"], 1, false],
-  ["Jirachi", "The wish pokémon. Jirachi is a mythical pokemon which can be summonned by a specific ritual of song. It is said that if you write a wish and place it on it's head, the wish will come true, but only for the pure of heart. ", "", 1, "Jirachi #385", 1, false],
+  ["Jirachi", "The wish pokémon. Jirachi is a mythical pokemon which can be summoned by a specific ritual of song. It is said that if you write a wish and place it on it's head, the wish will come true, but only for the pure of heart. ", "", 1, "Jirachi #385", 1, false],
   ["Jigglypuff", "The balloon pokémon. It's voice is said to be magical and Jigglypuff is able to sing it's audience to sleep, as they relax and let the notes flow over them. It is said that nothing can resist it's song.", "", 3, ["Igglybuff #174", "Jigglypuff #039", "Wigglytuff #040"], 2, false],
   ["Shaymin", "The gratitude pokémon. Shaymin (in sky forme) fly in flocks, purifying the air and getting rid of all pollutants. It reverts to it's land forme when it touches a Gracidea flower, when it is night time or when it is frozen.", "", 1, "Shaymin`#492", 1, false],
   ["Meloetta", "The melody pokémon. The mythical Meloetta's voice can control the emotions of pokémon who happen to hear it's pure voice. Whether or not it can affect humans as well remains to be seen.  ", "", 1, "Moloetta #648", 1, false],
@@ -48,7 +48,7 @@ var uglypokemon = [
   ],
   [
     "Conkeldurr",
-    "The muscular pokémon. It is said that Conkeldurr taught humans how to make concrete over 2000 years ago. Their knowledge of concrete allowes them to use the slabs they carry in their hands to be used freely in a variety of moves whilst in battle.",
+    "The muscular pokémon. It is said that Conkeldurr taught humans how to make concrete over 2000 years ago. Their knowledge of concrete allows them to use the slabs they carry in their hands to be used freely in a variety of moves whilst in battle.",
     "",
     3,
     ["Timburr #532", "Gurdurr #533", "Conkeldurr #534"],
@@ -329,7 +329,7 @@ function showSlides(s) {
   //Actives dot
   dots[slide - 1].className += " active";
   //Checks if ImageScroll is on
-  if (getStorage("ImageScroll")) {
+  if (getStorage("ImageScroll") == "Enabled") {
     //If on wait 2s then change slide by 1
     setTimeout(function () {
       showSlides((slide += 1));
