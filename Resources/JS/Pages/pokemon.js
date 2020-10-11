@@ -25,7 +25,7 @@ var cutepokemon = [
     false,
   ],
   ["Deerling", "The season pokémon. Deerling's coat noticeably changes in sync with the seasons. The colouring can also be affected by temperature, humidity, and other external influences.", "", 2, ["Deerling #585", "Sawsbuck #586"], 1, false],
-  ["Snom", "The worm pokémon. Its diet consists of snow it finds on the ground. As it eats more snow, the spikes on its back grow larger. It also uses a thread to weave a cocoon, disguising itslf as an icicle as it sleeps.", "", 2, ["Snom #872", "Frosmoth #873"], 1, false],
+  ["Snom", "The worm pokémon. Its diet consists of snow it finds on the ground. As it eats more snow, the spikes on its back grow larger. It also uses a thread to weave a cocoon, disguising itslf as an icicle as it sleeps.", "", 2, ["Snom #872", "Frosmoth #873"], 1, true],
   ["Teddiursa", "The little bear pokémon. This pokemon often hoards food, most of all honey, in many hidden locations around the forest it resides in. This is to prepare for the harsh wintertimes, where food is scarce. ", "", 2, ["Teddiursa #216", "Ursaring #217"], 1, false],
   ["Jirachi", "The wish pokémon. Jirachi is a mythical pokemon which can be summonned by a specific ritual of song. It is said that if you write a wish and place it on it's head, the wish will come true, but only for the pure of heart. ", "", 1, "Jirachi #385", 1, false],
   ["Jigglypuff", "The balloon pokémon. It's voice is said to be magical and Jigglypuff is able to sing it's audience to sleep, as they relax and let the notes flow over them. It is said that nothing can resist it's song.", "", 3, ["Igglybuff #174", "Jigglypuff #039", "Wigglytuff #040"], 2, false],
@@ -35,8 +35,8 @@ var cutepokemon = [
 ];
 //The uglypokemon array - used to display the correct information on the pokemon page
 var uglypokemon = [
-  ["Jynx", "The human shape pokémon. Jynx rocks its body in a rhythmic fashion, changing it's tempo to fit how it is feeling. While it speaks a language similar to that of humans, it prefers using dancing to communicate.", "", 2, ["Smoochum #238", "Jynx #124"], 2, false],
-  ["Probopass", "The compass pokémon. It controls 3 mini-noses, small replicas of itself which float around it, using magnetic force. They maneuver to catch prey and battle orders. The main body is thought of as the control center.", "", 2, ["Nosepass #299", "Probopass #476"], 2, false],
+  ["Jynx", "The human shape pokémon. Jynx rocks its body in a rhythmic fashion, changing it's tempo to fit how it is feeling. While it speaks a language similar to that of humans, it prefers using dancing to communicate.", "", 2, ["Smoochum #238", "Jynx #124"], 2, true],
+  ["Probopass", "The compass pokémon. It controls 3 mini-noses, small replicas of itself which float around it, using magnetic force. They maneuver to catch prey and battle orders. The main body is thought of as the control center.", "", 2, ["Nosepass #299", "Probopass #476"], 2, true],
   [
     "Garbodor",
     "The trash heap pokémon. Garbodor's body creates many kinds of toxic substances and poisons inside it. It's left arm is surprisingly strong and finishes off enemies with a shot of putrid, virulent gas that can kill a weak pokémon with ease.",
