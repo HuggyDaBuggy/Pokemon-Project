@@ -111,41 +111,39 @@
     </header>
     <!-- Pokemon main text (gets filled with js) -->
     <h1 id="pokemon-name"></h1>
-    <div class="box-main" style="display: flex; align-content: space-around">
+    <div class="box-main" style="display: flex">
       <!-- Main pokemon info/stats (gets filled with js) -->
-      <div style="width: 45%; display: inline-block">
-        <div class="box-sub" style="width: auto; height: auto">
-          <p id="pokemon-stats-title" style="font-weight: bold"></p>
-          <p style="text-align: left" id="pokemon-stats"></p>
-          <p id="pokemon-info-title" style="font-weight: bold"></p>
-          <p style="text-align: left" id="pokemon-info"></p>
-          <a href="polls"
-            ><p id="vote-poll"><b>Vote on this pokemon in a poll</b></p></a
-          >
-        </div>
-      </div>
+      <div class="box-sub" style="width: 45%">
+        <p id="pokemon-stats-title" style="font-weight: bold"></p>
+        <p style="text-align: left" id="pokemon-stats"></p>
+        <p id="pokemon-info-title" style="font-weight: bold"></p>
+        <p style="text-align: left" id="pokemon-info"></p>
+        <a href="polls"
+          ><p id="vote-poll"><b>Vote on this pokemon in a poll</b></p></a
+        >
+    </div>
       <!-- Image slideshow to show pokemon evolutions -->
-      <div style="width: 45%; height: 45%; display: inline-block">
+      <div class="box-sub" style="width: 45%; height: 45%">
         <div class="slides" style="display: none">
-          <img class="box-sub" src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-1" />
-          <div class="text" id="pokemon-image-text-1"></div>
+          <img src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-1" />
+          <p class="text" id="pokemon-image-text-1"></p>
         </div>
         <div class="slides" style="display: none">
-          <img class="box-sub" src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-2" />
-          <div class="text" id="pokemon-image-text-2"></div>
+          <img src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-2" />
+          <p class="text" id="pokemon-image-text-2"></p>
         </div>
         <div class="slides" style="display: none" id="slides-3">
-          <img class="box-sub" src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-3" />
-          <div class="text" id="pokemon-image-text-3"></div>
+          <img src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-3" />
+          <p class="text" id="pokemon-image-text-3"></p>
         </div>
         <!-- Slideshow controls -->
-        <div style="text-align: center" class="box-sub" id="pokemon-controls">
+        <span style="text-align: center" id="pokemon-controls">
           <span style="user-select: none; cursor: pointer" onclick="plusSlides(-1)">&larr;</span>
           <span class="dot" onclick="showslides(1)"></span>
           <span class="dot" onclick="showslides(2)"></span>
           <span class="dot" onclick="showslides(3)" id="image-dots-3"></span>
           <span style="user-select: none; cursor: pointer" onclick="plusSlides(1)">&rarr;</span>
-        </div>
+        </span>
       </div>
     </div>
     <!-- Related/Other pokemon -->
