@@ -1,4 +1,4 @@
-//Each pokemon array uses the format ["POKEMON NAME", "POKEMON INFO", "POKEMON STATS", NUMBER OF EVOLUTIONS, ["EVOLUTION 1 NAME", "EVOLUTION 2 NAME", "EVOLUTION 3 NAME"], THE EVOLUTION NUMBER OF THE MAIN POKEMON]
+//Each pokemon array uses the format ["POKEMON NAME", "POKEMON INFO", "POKEMON STATS", NUMBER OF EVOLUTIONS, ["EVOLUTION 1 NAME", "EVOLUTION 2 NAME", "EVOLUTION 3 NAME"], THE EVOLUTION NUMBER OF THE MAIN POKEMON, IF POKEMON IS ACTIVELY IN A POLL]
 //The cutepokemon array - used to display the correct information on the pokemon page
 var cutepokemon = [
   [
