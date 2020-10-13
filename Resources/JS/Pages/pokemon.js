@@ -288,6 +288,7 @@ var valid = false;
 var a = 0;
 var b = 0;
 var c = 0;
+var scrollallowed = false;
 //Loops through all pokemon to find which pokemon is specified
 while (a < 15) {
   //Checks if pokemon is cute
@@ -315,6 +316,7 @@ while (a < 15) {
       document.getElementById("slides-3").className = "unused";
       document.getElementById("pokemon-image-text-1").innerHTML = cutepokemon[a][4][0];
       document.getElementById("pokemon-image-text-2").innerHTML = cutepokemon[a][4][1];
+      scrollallowed = true;
     } else if (cutepokemon[a][3] == 3) {
       //Sets correct page  info if pokemon has 3 evolutions
       document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Cute/" + pokemon + "/2.png");
@@ -325,6 +327,7 @@ while (a < 15) {
       document.getElementById("pokemon-image-text-1").innerHTML = cutepokemon[a][4][0];
       document.getElementById("pokemon-image-text-2").innerHTML = cutepokemon[a][4][1];
       document.getElementById("pokemon-image-text-3").innerHTML = cutepokemon[a][4][2];
+      scrollallowed = true;
     } else {
       //Sets correct page  info if pokemon has no evolutions
       document.getElementById("pokemon-controls").style.display = "none";
@@ -382,6 +385,7 @@ while (a < 15) {
       document.getElementById("slides-3").className = "unused";
       document.getElementById("pokemon-image-text-1").innerHTML = uglypokemon[a][4][0];
       document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][4][1];
+      scrollallowed = true;
     } else if (uglypokemon[a][3] == 3) {
       //Sets correct page  info if pokemon has 3 evolutions
       document.getElementById("pokemon-image-2").setAttribute("src", "Resources/Images/Pokemon/Ugly/" + pokemon + "/2.png");
@@ -392,6 +396,7 @@ while (a < 15) {
       document.getElementById("pokemon-image-text-1").innerHTML = uglypokemon[a][4][0];
       document.getElementById("pokemon-image-text-2").innerHTML = uglypokemon[a][4][1];
       document.getElementById("pokemon-image-text-3").innerHTML = uglypokemon[a][4][2];
+      scrollallowed = true;
     } else {
       //Sets correct page  info if pokemon has no evolutions
       document.getElementById("pokemon-controls").style.display = "none";
@@ -473,7 +478,7 @@ function showSlides(s) {
   //Actives dot
   dots[slide - 1].className += " active";
   //Checks if ImageScroll is on
-  if (getStorage("ImageScroll") == "Enabled") {
+  if (getStorage("ImageScroll") == "Enabled" && (scrollallowed)) {
     //If on wait 2s then change slide by 1
     setTimeout(function () {
       showSlides((slide += 1));
