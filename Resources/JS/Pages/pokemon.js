@@ -478,7 +478,7 @@ function showSlides(s) {
   //Actives dot
   dots[slide - 1].className += " active";
   //Checks if ImageScroll is on
-  if (getStorage("ImageScroll") == "Enabled" && (scrollallowed)) {
+  if (getStorage("ImageScroll") == "Enabled" && scrollallowed) {
     //If on wait 2s then change slide by 1
     setTimeout(function () {
       showSlides((slide += 1));
