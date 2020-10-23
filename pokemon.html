@@ -11,13 +11,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta data for discord embeds -->
     <meta content="Cute and Ugly Pokemon - Pokemon" property="og:title" />
-    <meta content="Pokemon Website highlighting Cute and Ugly Pokemon" property="og:description" />
-    <meta content="https://huggydabuggy.github.io/Pokemon-Project/Resources/Images/icon.png" property="og:image" />
+    <meta
+      content="Pokemon Website highlighting Cute and Ugly Pokemon"
+      property="og:description"
+    />
+    <meta
+      content="https://huggydabuggy.github.io/Pokemon-Project/Resources/Images/icon.png"
+      property="og:image"
+    />
     <meta content="#FF8C00" data-react-helmet="true" name="theme-color" />
     <!-- Tab icon -->
     <link rel="icon" type="image/gif/png" href="Resources/Images/icon.png" />
     <!-- Import custom font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!-- Page title -->
     <title>Pokemon -</title>
     <style>
@@ -41,13 +50,101 @@
   </head>
   <body>
     <!-- Custom context menu div -->
-    <div class="box-main" id="context-menu" style="display: none; position: fixed; width: 10%; padding: 0.5%; z-index: 2000">
-      <a href="https://huggydabuggy.github.io/Pokemon-Project/"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Home</p></a>
-      <a href="cute"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Cute Pokemon</p></a>
-      <a href="ugly"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Ugly Pokemon</p></a>
-      <a href="polls"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Polls</p></a>
-      <a href="settings"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Site Settings</p></a>
-      <a href="info"><p class="box-sub" style="display: block; padding: 5%; margin: 5%; width: auto; text-align: left">Information</p></a>
+    <div
+      class="box-main"
+      id="context-menu"
+      style="
+        display: none;
+        position: fixed;
+        width: 10%;
+        padding: 0.5%;
+        z-index: 2000;
+      "
+    >
+      <a href="https://huggydabuggy.github.io/Pokemon-Project/"
+        ><p
+          class="box-sub"
+          style="
+            display: block;
+            padding: 5%;
+            margin: 5%;
+            width: auto;
+            text-align: left;
+          "
+        >
+          Home
+        </p></a
+      >
+      <a href="cute"
+        ><p
+          class="box-sub"
+          style="
+            display: block;
+            padding: 5%;
+            margin: 5%;
+            width: auto;
+            text-align: left;
+          "
+        >
+          Cute Pokemon
+        </p></a
+      >
+      <a href="ugly"
+        ><p
+          class="box-sub"
+          style="
+            display: block;
+            padding: 5%;
+            margin: 5%;
+            width: auto;
+            text-align: left;
+          "
+        >
+          Ugly Pokemon
+        </p></a
+      >
+      <a href="polls"
+        ><p
+          class="box-sub"
+          style="
+            display: block;
+            padding: 5%;
+            margin: 5%;
+            width: auto;
+            text-align: left;
+          "
+        >
+          Polls
+        </p></a
+      >
+      <a href="settings"
+        ><p
+          class="box-sub"
+          style="
+            display: block;
+            padding: 5%;
+            margin: 5%;
+            width: auto;
+            text-align: left;
+          "
+        >
+          Site Settings
+        </p></a
+      >
+      <a href="info"
+        ><p
+          class="box-sub"
+          style="
+            display: block;
+            padding: 5%;
+            margin: 5%;
+            width: auto;
+            text-align: left;
+          "
+        >
+          Information
+        </p></a
+      >
     </div>
     <!-- Header content -->
     <header class="box-main">
@@ -60,21 +157,55 @@
         <a href="cute"><p>Cute</p></a>
         <!-- Dropdown content -->
         <div class="box-main" id="dropdown-content">
-          <a href="pokemon?Pokemon=Pikachu" id="Pikachu-link" title="Pikachu"><p>Pikachu</p></a>
-          <a href="pokemon?Pokemon=Eevee" id="Eevee-link" title="Eevee"><p>Eevee</p></a>
+          <a href="pokemon?Pokemon=Pikachu" id="Pikachu-link" title="Pikachu"
+            ><p>Pikachu</p></a
+          >
+          <a href="pokemon?Pokemon=Eevee" id="Eevee-link" title="Eevee"
+            ><p>Eevee</p></a
+          >
           <a href="pokemon?Pokemon=Mew" id="Mew-link" title="Mew"><p>Mew</p></a>
-          <a href="pokemon?Pokemon=Togepi" id="Togepi-link" title="Togepi"><p>Togepi</p></a>
-          <a href="pokemon?Pokemon=Skitty" id="Skitty-link" title="Skitty"><p>Skitty</p></a>
-          <a href="pokemon?Pokemon=Vulpix" id="Vulpix-link" title="Vulpix"><p>Vulpix</p></a>
-          <a href="pokemon?Pokemon=Emolga" id="Emolga-link" title="Emolga"><p>Emolga</p></a>
-          <a href="pokemon?Pokemon=Deerling" id="Deerling-link" title="Deerling"><p>Deerling</p></a>
-          <a href="pokemon?Pokemon=Snom" id="Snom-link" title="Snom"><p>Snom</p></a>
-          <a href="pokemon?Pokemon=Teddiursa" id="Teddiursa-link" title="Teddiursa"><p>Teddiursa</p></a>
-          <a href="pokemon?Pokemon=Jirachi" id="Jirachi-link" title="Jirachi"><p>Jirachi</p></a>
-          <a href="pokemon?Pokemon=Jigglypuff" id="Jigglypuff-link" title="Jigglypuff"><p>Jigglypuff</p></a>
-          <a href="pokemon?Pokemon=Shaymin" id="Shaymin-link" title="Shaymin"><p>Shaymin</p></a>
-          <a href="pokemon?Pokemon=Meloetta" id="Meloetta-link" title="Meloetta"><p>Meloetta</p></a>
-          <a href="pokemon?Pokemon=Absol" id="Absol-link" title="Absol"><p>Absol</p></a>
+          <a href="pokemon?Pokemon=Togepi" id="Togepi-link" title="Togepi"
+            ><p>Togepi</p></a
+          >
+          <a href="pokemon?Pokemon=Skitty" id="Skitty-link" title="Skitty"
+            ><p>Skitty</p></a
+          >
+          <a href="pokemon?Pokemon=Vulpix" id="Vulpix-link" title="Vulpix"
+            ><p>Vulpix</p></a
+          >
+          <a href="pokemon?Pokemon=Emolga" id="Emolga-link" title="Emolga"
+            ><p>Emolga</p></a
+          >
+          <a href="pokemon?Pokemon=Deerling" id="Deerling-link" title="Deerling"
+            ><p>Deerling</p></a
+          >
+          <a href="pokemon?Pokemon=Snom" id="Snom-link" title="Snom"
+            ><p>Snom</p></a
+          >
+          <a
+            href="pokemon?Pokemon=Teddiursa"
+            id="Teddiursa-link"
+            title="Teddiursa"
+            ><p>Teddiursa</p></a
+          >
+          <a href="pokemon?Pokemon=Jirachi" id="Jirachi-link" title="Jirachi"
+            ><p>Jirachi</p></a
+          >
+          <a
+            href="pokemon?Pokemon=Jigglypuff"
+            id="Jigglypuff-link"
+            title="Jigglypuff"
+            ><p>Jigglypuff</p></a
+          >
+          <a href="pokemon?Pokemon=Shaymin" id="Shaymin-link" title="Shaymin"
+            ><p>Shaymin</p></a
+          >
+          <a href="pokemon?Pokemon=Meloetta" id="Meloetta-link" title="Meloetta"
+            ><p>Meloetta</p></a
+          >
+          <a href="pokemon?Pokemon=Absol" id="Absol-link" title="Absol"
+            ><p>Absol</p></a
+          >
         </div>
       </div>
       <div class="dropdown">
@@ -82,21 +213,61 @@
         <a href="ugly"><p>Ugly</p></a>
         <!-- Dropdown content -->
         <div class="box-main" id="dropdown-content">
-          <a href="pokemon?Pokemon=Jynx" id="Jynx-link" title="Jynx"><p>Jynx</p></a>
-          <a href="pokemon?Pokemon=Probopass" id="Probopass-link" title="Probopass"><p>Probopass</p></a>
-          <a href="pokemon?Pokemon=Garbodor" id="Garbodor-link" title="Garbodor"><p>Garbodor</p></a>
-          <a href="pokemon?Pokemon=Conkeldurr" id="Conkeldurr-link" title="Conkeldurr"><p>Conkeldurr</p></a>
-          <a href="pokemon?Pokemon=Barbacle" id="Barbaracle-link" title="Barbaracle"><p>Barbaracle</p></a>
-          <a href="pokemon?Pokemon=Stunfisk" id="Stunfisk-link" title="Stunfisk"><p>Stunfisk</p></a>
-          <a href="pokemon?Pokemon=Seismitoad" id="Seismitoad-link" title="Seismitoad"><p>Seismitoad</p></a>
-          <a href="pokemon?Pokemon=Purugly" id="Purugly-link" title="Purugly"><p>Purugly</p></a>
+          <a href="pokemon?Pokemon=Jynx" id="Jynx-link" title="Jynx"
+            ><p>Jynx</p></a
+          >
+          <a
+            href="pokemon?Pokemon=Probopass"
+            id="Probopass-link"
+            title="Probopass"
+            ><p>Probopass</p></a
+          >
+          <a href="pokemon?Pokemon=Garbodor" id="Garbodor-link" title="Garbodor"
+            ><p>Garbodor</p></a
+          >
+          <a
+            href="pokemon?Pokemon=Conkeldurr"
+            id="Conkeldurr-link"
+            title="Conkeldurr"
+            ><p>Conkeldurr</p></a
+          >
+          <a
+            href="pokemon?Pokemon=Barbacle"
+            id="Barbaracle-link"
+            title="Barbaracle"
+            ><p>Barbaracle</p></a
+          >
+          <a href="pokemon?Pokemon=Stunfisk" id="Stunfisk-link" title="Stunfisk"
+            ><p>Stunfisk</p></a
+          >
+          <a
+            href="pokemon?Pokemon=Seismitoad"
+            id="Seismitoad-link"
+            title="Seismitoad"
+            ><p>Seismitoad</p></a
+          >
+          <a href="pokemon?Pokemon=Purugly" id="Purugly-link" title="Purugly"
+            ><p>Purugly</p></a
+          >
           <a href="pokemon?Pokemon=Muk" id="Muk-link" title="Muk"><p>Muk</p></a>
-          <a href="pokemon?Pokemon=Drowzee" id="Drowzee-link" title="Drowzee"><p>Drowzee</p></a>
-          <a href="pokemon?Pokemon=Swampert" id="Swampert-link" title="Swampert"><p>Swampert</p></a>
-          <a href="pokemon?Pokemon=Walrein" id="Walrein-link" title="Walrein"><p>Walrein</p></a>
-          <a href="pokemon?Pokemon=Malamar" id="Malamar-link" title="Malamar"><p>Malamar</p></a>
-          <a href="pokemon?Pokemon=Noivern" id="Noivern-link" title="Noivern"><p>Noivern</p></a>
-          <a href="pokemon?Pokemon=Skuntank" id="Skuntank-link" title="Skuntank"><p>Skuntank</p></a>
+          <a href="pokemon?Pokemon=Drowzee" id="Drowzee-link" title="Drowzee"
+            ><p>Drowzee</p></a
+          >
+          <a href="pokemon?Pokemon=Swampert" id="Swampert-link" title="Swampert"
+            ><p>Swampert</p></a
+          >
+          <a href="pokemon?Pokemon=Walrein" id="Walrein-link" title="Walrein"
+            ><p>Walrein</p></a
+          >
+          <a href="pokemon?Pokemon=Malamar" id="Malamar-link" title="Malamar"
+            ><p>Malamar</p></a
+          >
+          <a href="pokemon?Pokemon=Noivern" id="Noivern-link" title="Noivern"
+            ><p>Noivern</p></a
+          >
+          <a href="pokemon?Pokemon=Skuntank" id="Skuntank-link" title="Skuntank"
+            ><p>Skuntank</p></a
+          >
         </div>
       </div>
       <!-- Header polls -->
@@ -119,44 +290,106 @@
       <div class="box-sub" style="width: 45%">
         <p><b>Evolutions / Images</b></p>
         <div class="slides" style="display: none">
-          <img src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-1" />
+          <img
+            src="Resources/Images/icon.png"
+            alt=""
+            width="75%"
+            height="75%"
+            id="pokemon-image-1"
+          />
           <p id="pokemon-image-text-1"></p>
         </div>
         <div class="slides" style="display: none">
-          <img src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-2" />
+          <img
+            src="Resources/Images/icon.png"
+            alt=""
+            width="75%"
+            height="75%"
+            id="pokemon-image-2"
+          />
           <p id="pokemon-image-text-2"></p>
         </div>
         <div class="slides" style="display: none" id="slides-3">
-          <img src="Resources/Images/icon.png" alt="" width="75%" height="75%" id="pokemon-image-3" />
+          <img
+            src="Resources/Images/icon.png"
+            alt=""
+            width="75%"
+            height="75%"
+            id="pokemon-image-3"
+          />
           <p id="pokemon-image-text-3"></p>
         </div>
         <!-- Slideshow controls -->
         <span style="text-align: center" id="pokemon-controls">
-          <span style="user-select: none; cursor: pointer" onclick="plusSlides(-1)">&larr;</span>
+          <span
+            style="user-select: none; cursor: pointer"
+            onclick="plusSlides(-1)"
+            >&larr;</span
+          >
           <span class="dot" onclick="showslides(1)"></span>
           <span class="dot" onclick="showslides(2)"></span>
           <span class="dot" onclick="showslides(3)" id="image-dots-3"></span>
-          <span style="user-select: none; cursor: pointer" onclick="plusSlides(1)">&rarr;</span>
+          <span
+            style="user-select: none; cursor: pointer"
+            onclick="plusSlides(1)"
+            >&rarr;</span
+          >
         </span>
       </div>
     </div>
     <!-- Related/Other pokemon -->
     <h3 id="related-pokemon"></h3>
     <div class="box-main">
-      <a href="pokemon?Pokemon=" class="box-sub" style="width: 20%; height: 20%" id="related-pokemon-link-1"
-        ><img src="Resources/Images/icon.png" alt="" width="50%" height="50%" id="related-pokemon-image-1" /><br />
+      <a
+        href="pokemon?Pokemon="
+        class="box-sub"
+        style="width: 20%; height: 20%"
+        id="related-pokemon-link-1"
+        ><img
+          src="Resources/Images/icon.png"
+          alt=""
+          width="50%"
+          height="50%"
+          id="related-pokemon-image-1" /><br />
         <p id="related-pokemon-1"></p
       ></a>
-      <a href="pokemon?Pokemon=" class="box-sub" style="width: 20%; height: 20%" id="related-pokemon-link-2"
-        ><img src="Resources/Images/icon.png" alt="" width="50%" height="50%" id="related-pokemon-image-2" /><br />
+      <a
+        href="pokemon?Pokemon="
+        class="box-sub"
+        style="width: 20%; height: 20%"
+        id="related-pokemon-link-2"
+        ><img
+          src="Resources/Images/icon.png"
+          alt=""
+          width="50%"
+          height="50%"
+          id="related-pokemon-image-2" /><br />
         <p id="related-pokemon-2"></p
       ></a>
-      <a href="pokemon?Pokemon=" class="box-sub" style="width: 20%; height: 20%" id="related-pokemon-link-3"
-        ><img src="Resources/Images/icon.png" alt="" width="50%" height="50%" id="related-pokemon-image-3" /><br />
+      <a
+        href="pokemon?Pokemon="
+        class="box-sub"
+        style="width: 20%; height: 20%"
+        id="related-pokemon-link-3"
+        ><img
+          src="Resources/Images/icon.png"
+          alt=""
+          width="50%"
+          height="50%"
+          id="related-pokemon-image-3" /><br />
         <p id="related-pokemon-3"></p
       ></a>
-      <a href="pokemon?Pokemon=" class="box-sub" style="width: 20%; height: 20%" id="related-pokemon-link-4"
-        ><img src="Resources/Images/icon.png" alt="" width="50%" height="50%" id="related-pokemon-image-4" /><br />
+      <a
+        href="pokemon?Pokemon="
+        class="box-sub"
+        style="width: 20%; height: 20%"
+        id="related-pokemon-link-4"
+        ><img
+          src="Resources/Images/icon.png"
+          alt=""
+          width="50%"
+          height="50%"
+          id="related-pokemon-image-4" /><br />
         <p id="related-pokemon-4"></p
       ></a>
     </div>
@@ -169,9 +402,13 @@
       <!-- References page footer link -->
       <a href="references"><p>References</p></a>
       <!-- Official Pokemon Website footer link -->
-      <a href="https://www.pokemon.com/us/" target="_blank"><p>Official Pokemon Website</p></a>
+      <a href="https://www.pokemon.com/us/" target="_blank"
+        ><p>Official Pokemon Website</p></a
+      >
       <!-- Pokedex footer link -->
-      <a href="https://www.pokemon.com/us/pokedex/" target="_blank"><p>Official Pokedex</p></a>
+      <a href="https://www.pokemon.com/us/pokedex/" target="_blank"
+        ><p>Official Pokedex</p></a
+      >
     </footer>
   </body>
   <script src="Resources/JS/main.js"></script>

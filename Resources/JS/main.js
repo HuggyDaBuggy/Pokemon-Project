@@ -43,20 +43,28 @@ if (getStorage("Theme") == null) {
     setStorage("ImageScroll", "Disabled");
     setStorage("ContextToggle", "Enabled");
   } else {
-    alert("Your browser does not support local storage, this will cause some features to not work correctly.");
+    alert(
+      "Your browser does not support local storage, this will cause some features to not work correctly."
+    );
   }
 }
 //Applies the custom theme
 if (getStorage("Theme") == "Light") {
-  document.getElementById("theme-style").setAttribute("href", "Resources/CSS/Themes/light.css");
+  document
+    .getElementById("theme-style")
+    .setAttribute("href", "Resources/CSS/Themes/light.css");
 } else {
-  document.getElementById("theme-style").setAttribute("href", "Resources/CSS/Themes/dark.css");
+  document
+    .getElementById("theme-style")
+    .setAttribute("href", "Resources/CSS/Themes/dark.css");
 }
 //Shows the custom context menu on rclick - combined with line 25
 function contextMenu(event) {
   if (getStorage("ContextToggle") == "Enabled") {
-    document.getElementById("context-menu").style.left = event.clientX - 17 + "px";
-    document.getElementById("context-menu").style.top = event.clientY - 17 + "px";
+    document.getElementById("context-menu").style.left =
+      event.clientX - 17 + "px";
+    document.getElementById("context-menu").style.top =
+      event.clientY - 17 + "px";
     document.getElementById("context-menu").style.display = "block";
   }
 }
